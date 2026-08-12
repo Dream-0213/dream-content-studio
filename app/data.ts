@@ -1,0 +1,110 @@
+export const services = [
+  {
+    slug: "original-content",
+    number: "01",
+    title: "原创技术内容",
+    brief: "从产品资料、技术文档与试用体验出发，策划开发者真正愿意阅读的深度内容。",
+    detail: "覆盖产品测评、实战教程、API 与 SDK 接入、大模型与 Agent 解析、行业观察及版本更新解读。内容兼顾技术准确性、可读性与搜索价值。",
+    points: ["技术教程与产品测评", "API / SDK 接入指南", "SEO 长尾内容建设", "新产品与版本解读"],
+  },
+  {
+    slug: "creator-campaign",
+    number: "02",
+    title: "万粉博主原创推广",
+    brief: "按产品领域、目标人群和预算，匹配百余位万粉级技术创作者。",
+    detail: "品牌方可先查看博主主页、粉丝量与历史内容，再确定合作名单。由 Dream 工作室统一负责选题、沟通、审核、排期和交付。",
+    points: ["百余位万粉技术博主", "品牌方自主挑选", "垂直方向精准匹配", "统一交付与数据回收"],
+  },
+  {
+    slug: "distribution",
+    number: "03",
+    title: "多平台矩阵分发",
+    brief: "让优质内容进入 CSDN、公众号、知乎、掘金等开发者聚集地。",
+    detail: "支持已有文章代发，也支持统一创作后按平台特点进行差异化调整。可单平台集中发布，也可组合多个技术社区形成传播矩阵。",
+    points: ["200+ 可合作代发博主", "多平台组合发布", "平台化内容适配", "发布链接统一统计"],
+  },
+  {
+    slug: "content-operations",
+    number: "04",
+    title: "长期内容运营",
+    brief: "以周或月为周期持续发布，沉淀品牌搜索结果、开发者认知与产品口碑。",
+    detail: "从月度选题、博主招募、创作要求、内容审核到数据复盘，建立稳定可重复的内容生产与传播机制。",
+    points: ["月度选题规划", "稳定周度发布", "内容审核与排期", "阶段数据复盘"],
+  },
+  {
+    slug: "large-campaigns",
+    number: "05",
+    title: "大型征文与招募",
+    brief: "组织数十至数百位创作者参与征文、产品体验和集中技术推广。",
+    detail: "复杂技术产品可先开展统一培训，减少理解偏差。我们统筹活动规则、招募、样稿、审核、发布节奏和最终结项。",
+    points: ["活动规则与选题设计", "定向博主招募", "产品技术培训", "项目结项与数据汇总"],
+  },
+];
+
+export const cases = [
+  {
+    slug: "feisuan-javaai",
+    client: "飞算 JavaAI",
+    tag: "大型博主矩阵",
+    result: "150 位",
+    resultLabel: "万粉博主参与",
+    summary: "围绕 Java 开发、AI 辅助编程与开发效率，组织大规模原创内容并完成 CSDN、知乎、公众号多平台传播。",
+    metrics: ["部分文章单篇阅读量 1 万+", "近半数重点文章进入热榜或推荐", "覆盖 Java 与 AI 开发者人群"],
+  },
+  {
+    slug: "todesk-distribution",
+    client: "ToDesk 长期代发",
+    tag: "长期矩阵运营",
+    result: "300+ 篇",
+    resultLabel: "累计发布内容",
+    summary: "在 CSDN、知乎、掘金等平台建立稳定周度发布机制，持续提升产品在搜索结果和技术社区中的曝光。",
+    metrics: ["每周约 40 篇稳定发布", "持续合作半年以上", "形成成熟批量交付流程"],
+  },
+  {
+    slug: "todesk-ai",
+    client: "ToDesk AI",
+    tag: "原创内容推广",
+    result: "50+ 篇",
+    resultLabel: "原创技术内容",
+    summary: "从不同创作者视角讲述远程办公、跨设备操作与 AI 助手的真实使用场景，兼顾产品理解与内容传播。",
+    metrics: ["每周稳定产出约 10 篇", "多篇公众号阅读量 1000+", "推广期渠道下载量上千"],
+  },
+  {
+    slug: "huawei-kunpeng-ascend",
+    client: "华为昇腾及鲲鹏",
+    tag: "国产算力生态",
+    result: "100+ 篇",
+    resultLabel: "高质量原创文章",
+    summary: "负责博主培训、内容策划、技术方向讲解、文章审核和整体项目统筹，沉淀专业国产算力内容。",
+    metrics: ["独立培训 50+ 位技术博主", "累计合作金额 50 万元", "成为 CSDN 终身及首席合作伙伴"],
+  },
+  {
+    slug: "360-ai",
+    client: "CSDN × 360 AI",
+    tag: "AI 技术推广",
+    result: "30+ 位",
+    resultLabel: "技术博主参与",
+    summary: "围绕 GUI Agent、多模态大模型、智能办公与行业趋势，以多元内容视角形成集中传播矩阵。",
+    metrics: ["技术解读与场景内容结合", "覆盖多模态及 Agent 方向", "兼顾技术深度与品牌曝光"],
+  },
+  {
+    slug: "dataify",
+    client: "Dataify",
+    tag: "数据服务推广",
+    result: "50+ 位",
+    resultLabel: "技术博主参与",
+    summary: "围绕数据服务、API 教程、AI 训练数据与开发者实践组织原创推广，目前仍保持持续合作。",
+    metrics: ["覆盖教程、对比与解决方案", "面向开发者真实应用场景", "已形成持续合作机制"],
+  },
+];
+
+export const platforms = ["CSDN", "微信公众号", "知乎", "稀土掘金", "腾讯云", "华为云", "51CTO", "开源中国"];
+
+export const profileLinks = [
+  ["CSDN", "https://blog.csdn.net/weixin_51390582"],
+  ["稀土掘金", "https://juejin.cn/user/765678294413181"],
+  ["微信公众号", "https://mp.weixin.qq.com/s/PJEK1xRE9ptnNcUKAFxEgw"],
+  ["51CTO", "https://blog.51cto.com/u_15492594"],
+  ["知乎", "https://www.zhihu.com/people/xu-yi-peng-21-72"],
+  ["腾讯云开发者社区", "https://cloud.tencent.com/developer/user/9547619"],
+] as const;
