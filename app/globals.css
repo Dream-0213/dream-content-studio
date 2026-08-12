@@ -108,13 +108,35 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
 .credential-list { list-style:none; padding:0; margin:0; }
 .credential-list li { padding:21px 0; border-bottom:1px solid var(--line); font-size:15px; }
 .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:9vw; }
-.wechat-box { background:var(--navy); color:#fff; padding:45px; }
+.wechat-box { background:var(--navy); color:#fff; padding:45px; display:grid; grid-template-columns:minmax(0,1fr) 210px; gap:34px; align-items:center; }
 .wechat-box small { color:#8ea5b5; letter-spacing:.15em; }
 .wechat-box strong { display:block; margin:25px 0; color:var(--gold); font:500 clamp(30px,4vw,54px) Georgia,serif; }
 .wechat-box p { color:#aec0cc; line-height:1.8; }
+.wechat-qr { padding:13px; background:#fff; color:var(--navy); text-align:center; }
+.wechat-qr img { width:100%; display:block; aspect-ratio:1/1.48; object-fit:cover; object-position:center; }
+.wechat-qr span { display:block; padding:9px 0 2px; font-size:11px; font-weight:600; letter-spacing:.08em; }
 .contact-notes { padding-top:18px; }
 .contact-notes h2 { font-size:38px; }
 .contact-notes ol { padding-left:22px; color:#58636d; line-height:2.2; }
+.creator-hero { min-height:520px; }
+.creators-section { padding-top:70px; }
+.creator-toolbar { display:grid; grid-template-columns:auto minmax(220px,460px) auto; align-items:center; gap:18px; padding:0 0 28px; border-bottom:1px solid var(--navy); }
+.creator-toolbar label { font-size:13px; font-weight:700; letter-spacing:.08em; }
+.creator-toolbar input { width:100%; height:48px; border:1px solid var(--line); background:#fff; padding:0 17px; color:var(--ink); font:inherit; outline:none; }
+.creator-toolbar input:focus { border-color:var(--blue); box-shadow:0 0 0 3px rgba(14,77,114,.09); }
+.creator-toolbar span { justify-self:end; color:var(--muted); font-size:13px; }
+.creator-list { border-bottom:1px solid var(--navy); }
+.creator-row { min-height:118px; display:grid; grid-template-columns:58px minmax(240px,.8fr) 1.2fr; gap:24px; align-items:center; border-bottom:1px solid var(--line); }
+.creator-row:last-child { border-bottom:0; }
+.creator-index { color:#a47a3d; font:italic 13px Georgia,serif; }
+.creator-name { display:flex; align-items:baseline; gap:18px; }
+.creator-name h2 { margin:0; color:var(--navy); font:500 22px Georgia,"Songti SC",serif; }
+.creator-name strong { color:var(--gold); font:500 18px Georgia,serif; white-space:nowrap; }
+.creator-platforms { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px; }
+.creator-platforms a { min-width:72px; padding:9px 12px; border:1px solid var(--line); text-align:center; font-size:12px; transition:.2s ease; }
+.creator-platforms a:hover { background:var(--navy); border-color:var(--navy); color:#fff; }
+.creator-empty { padding:70px 0; text-align:center; color:var(--muted); }
+.creator-note { margin:24px 0 0; color:var(--muted); font-size:12px; line-height:1.8; }
 
 @media (max-width:900px) {
   nav a:not(.nav-cta) { display:none; }
@@ -124,6 +146,10 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
   .service-grid,.case-grid { grid-template-columns:repeat(2,1fr); }
   .section-heading { gap:30px; }
   .metrics-band { grid-template-columns:1fr; }
+  .wechat-box { grid-template-columns:1fr; }
+  .wechat-qr { max-width:240px; }
+  .creator-row { grid-template-columns:42px 1fr; padding:24px 0; }
+  .creator-platforms { grid-column:2; justify-content:flex-start; }
   .metrics-band div { border-right:1px solid rgba(255,255,255,.16); border-bottom:1px solid rgba(255,255,255,.16); }
 }
 @media (max-width:600px) {
@@ -140,4 +166,9 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
   .case-card { min-height:400px; }
   .footer-main,.footer-bottom { flex-direction:column; align-items:flex-start; }
   .subhero { min-height:400px; padding-top:80px; }
+  .creator-toolbar { grid-template-columns:1fr auto; }
+  .creator-toolbar label { grid-column:1 / -1; }
+  .creator-row { grid-template-columns:30px 1fr; gap:12px; }
+  .creator-name { flex-direction:column; gap:7px; }
+  .creator-platforms a { min-width:64px; }
 }
