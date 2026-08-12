@@ -1,11 +1,15 @@
-import Link from "next/link";
+import type { AnchorHTMLAttributes } from "react";
 import { cases, platforms, services } from "./data";
+
+export function Link({href, ...props}: AnchorHTMLAttributes<HTMLAnchorElement> & {href: string}) {
+  return <a href={href} {...props} />;
+}
 
 export function Header() {
   return (
     <header className="site-header">
       <Link href="/" className="brand" aria-label="Dream内容推广工作室首页">
-        <span className="brand-mark">D</span>
+        <img className="brand-logo" src="/dream-logo.png" alt="" />
         <span><b>DREAM</b><small>内容推广工作室</small></span>
       </Link>
       <nav aria-label="主导航">

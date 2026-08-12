@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { CaseGrid, Footer, Header, PlatformStrip, ServiceGrid } from "./components";
+import { CaseGrid, Footer, Header, Link, PlatformStrip, ServiceGrid } from "./components";
 
 export default function Home() {
   return <>
@@ -34,6 +33,17 @@ export default function Home() {
           <p>我们不只是把品牌资料换一种说法。985 高校人工智能科班背景、企业大模型算法开发经验与长期技术创作积累，让我们能够真正理解复杂产品。</p>
           <p>从真实问题、使用过程与应用场景出发，把产品能力转化为开发者愿意阅读、收藏、搜索和分享的内容。</p>
           <Link href="/about" className="text-link">了解 Dream 工作室 <b>↗</b></Link>
+        </div>
+      </section>
+
+      <section className="section identity-section">
+        <div className="identity-image-wrap"><img src="/dream-profile.png" alt="Dream工作室技术内容推广与创作者资源介绍" /></div>
+        <div className="identity-copy">
+          <p className="eyebrow">TRUST &amp; REACH</p>
+          <h2>专业背景与创作者网络，<br />让传播更可信</h2>
+          <p>2025 年度 CSDN 全站 TOP 10 博主、CSDN 终身及首席合作伙伴、2024 年度华为云十佳博主、稀土掘金人工智能签约作者。</p>
+          <p>以技术理解力保障内容质量，以百余位万粉博主和千人创作者社群保障项目执行。</p>
+          <Link href="/about" className="text-link">查看完整介绍 <b>↗</b></Link>
         </div>
       </section>
 
