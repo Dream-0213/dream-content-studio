@@ -43,6 +43,15 @@ export const services = [
 
 export const cases = [
   {
+    slug: "chengjubao-csdn-kol",
+    client: "程聚宝 CSDN KOL 投放计划",
+    tag: "开发者增长投放",
+    result: "2W+",
+    resultLabel: "平均单篇阅读量",
+    summary: "以 CSDN 垂直技术 KOL 为核心，联动知乎、掘金、公众号等开发者内容阵地，构建从技术信任背书、搜索结果占位到平台注册转化的增长闭环。项目平均单篇阅读量达到 2W+，推动平台日增长 1000+ 用户。",
+    metrics: ["平均单篇阅读量 2W+", "平台日增长 1000+ 用户", "多平台技术内容矩阵协同"],
+  },
+  {
     slug: "feisuan-javaai",
     client: "飞算 JavaAI",
     tag: "大型博主矩阵",

@@ -6,6 +6,8 @@ import { FeisuanContentList } from "../FeisuanContentList";
 import { feisuanContents } from "../feisuan-content";
 import { HuaweiContentList } from "../HuaweiContentList";
 import { huaweiContents } from "../huawei-content";
+import { ChengjubaoContentList } from "../ChengjubaoContentList";
+import { chengjubaoContents } from "../chengjubao-content";
 
 export function generateStaticParams() { return cases.map(({slug}) => ({slug})); }
 export async function generateMetadata({params}: {params:Promise<{slug:string}>}): Promise<Metadata> {
@@ -22,6 +24,12 @@ export default async function CasePage({params}: {params:Promise<{slug:string}>}
       <div className="section-heading"><div><p className="eyebrow">PUBLIC DELIVERABLES</p><h2>公开内容名单</h2></div><p>项目整体由 300 位万粉博主参与。当前已整理 150 篇公开内容，收录 450 个多平台发布链接。</p></div>
       <FeisuanContentList contents={feisuanContents} />
       <p className="creator-note">文章标题、发布日期和链接来自项目交付记录；外部平台内容可能因平台调整而发生变化。</p>
+    </section>}
+    {slug === "chengjubao-csdn-kol" && <section className="section case-deliveries chengjubao-deliveries">
+      <div className="section-heading"><div><p className="eyebrow">GROWTH CONTENT MATRIX</p><h2>CSDN KOL<br/>投放成果</h2></div><p>以高信任技术内容切入开发者决策链路，再通过多平台同步分发放大搜索覆盖和品牌触达。当前展示 19 位博主、57 个公开发布链接。</p></div>
+      <div className="delivery-proof" aria-label="程聚宝投放成果数据"><div><strong>2W+</strong><span>平均单篇阅读量</span></div><div><strong>1000+</strong><span>平台日增长用户</span></div><div><strong>19</strong><span>位技术 KOL</span></div><div><strong>57</strong><span>个多平台发布链接</span></div></div>
+      <ChengjubaoContentList contents={chengjubaoContents} />
+      <p className="creator-note">本页展示当前整理的公开投放成果；外部平台内容可能因平台调整而发生变化。</p>
     </section>}
     {slug === "huawei-kunpeng-ascend" && <section className="section case-deliveries huawei-deliveries">
       <div className="section-heading"><div><p className="eyebrow">TECHNICAL CONTENT LIBRARY</p><h2>昇腾 × 鲲鹏<br/>技术成果库</h2></div><p>每篇文章都对应明确的课程或实操选题。内容覆盖模型迁移、推理部署、算子开发、性能调优和鲲鹏软件栈，可供开发者学习、复现与检索。</p></div>

@@ -122,6 +122,8 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
 .delivery-links a { min-width:76px; padding:9px 10px; border:1px solid #c5c3bc; background:rgba(255,255,255,.38); text-align:center; font-size:11px; transition:.2s ease; }
 .delivery-links a:hover { background:var(--navy); border-color:var(--navy); color:#fff; }
 .huawei-deliveries { background:linear-gradient(180deg,#e8e3d9 0%,#f2eee6 100%); }
+.chengjubao-deliveries { background:linear-gradient(180deg,#e5ecec 0%,#f2eee6 100%); }
+.chengjubao-list .delivery-item { min-height:128px; }
 .huawei-deliveries .delivery-toolbar { grid-template-columns:auto minmax(220px,1fr) auto auto; }
 .delivery-proof { display:grid; grid-template-columns:repeat(4,1fr); margin:-12px 0 48px; border-top:1px solid var(--navy); border-left:1px solid #bcbab3; }
 .delivery-proof div { min-height:130px; padding:24px; display:flex; flex-direction:column; justify-content:center; gap:8px; border-right:1px solid #bcbab3; border-bottom:1px solid #bcbab3; }
