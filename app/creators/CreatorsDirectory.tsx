@@ -17,7 +17,7 @@ export function CreatorsDirectory({creators}: {creators: Creator[]}) {
       <span>{visible.length} 位</span>
     </div>
     <div className="creator-list">
-      {visible.map((creator, index) => <article className="creator-row" key={creator.name}>
+      {visible.map((creator, index) => <article className="creator-row" key={`${creator.name}-${creator.csdn ?? creator.wechat ?? index}`}>
         <span className="creator-index">{String(index + 1).padStart(2,"0")}</span>
         <div className="creator-name"><h2>{creator.name}</h2><strong>{creator.followers}</strong></div>
         <div className="creator-platforms">

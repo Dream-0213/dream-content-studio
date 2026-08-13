@@ -104,7 +104,7 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
 .metrics-band div:last-child { border-right:1px solid rgba(255,255,255,.16); }
 .metrics-band span { display:block; color:#b2c0ca; line-height:1.7; }
 .case-deliveries { background:#ece7de; }
-.delivery-toolbar { display:grid; grid-template-columns:auto minmax(220px,1fr) 150px auto; align-items:center; gap:16px; padding-bottom:26px; border-bottom:1px solid var(--navy); }
+.delivery-toolbar { display:grid; grid-template-columns:auto minmax(220px,1fr) auto; align-items:center; gap:16px; padding-bottom:26px; border-bottom:1px solid var(--navy); }
 .delivery-toolbar label { font-size:13px; font-weight:700; letter-spacing:.06em; }
 .delivery-toolbar input,.delivery-toolbar select { height:48px; border:1px solid #c8c6bf; background:#fff; padding:0 15px; color:var(--ink); font:inherit; outline:none; }
 .delivery-toolbar input:focus,.delivery-toolbar select:focus { border-color:var(--blue); box-shadow:0 0 0 3px rgba(14,77,114,.09); }
@@ -122,6 +122,7 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
 .delivery-links a { min-width:76px; padding:9px 10px; border:1px solid #c5c3bc; background:rgba(255,255,255,.38); text-align:center; font-size:11px; transition:.2s ease; }
 .delivery-links a:hover { background:var(--navy); border-color:var(--navy); color:#fff; }
 .huawei-deliveries { background:linear-gradient(180deg,#e8e3d9 0%,#f2eee6 100%); }
+.huawei-deliveries .delivery-toolbar { grid-template-columns:auto minmax(220px,1fr) auto auto; }
 .delivery-proof { display:grid; grid-template-columns:repeat(4,1fr); margin:-12px 0 48px; border-top:1px solid var(--navy); border-left:1px solid #bcbab3; }
 .delivery-proof div { min-height:130px; padding:24px; display:flex; flex-direction:column; justify-content:center; gap:8px; border-right:1px solid #bcbab3; border-bottom:1px solid #bcbab3; }
 .delivery-proof strong { color:var(--gold); font:500 38px Georgia,serif; }
@@ -189,7 +190,7 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
   .creator-row { grid-template-columns:42px 1fr; padding:24px 0; }
   .creator-platforms { grid-column:2; justify-content:flex-start; }
   .wechat-creator-list { grid-template-columns:1fr; }
-  .delivery-toolbar { grid-template-columns:1fr 150px auto; }
+  .delivery-toolbar { grid-template-columns:1fr auto; }
   .delivery-toolbar label { grid-column:1 / -1; }
   .delivery-item { grid-template-columns:34px 1fr; }
   .delivery-links { grid-column:2; justify-content:flex-start; }
@@ -218,7 +219,6 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
   .wechat-creator-card { padding:22px 18px; grid-template-columns:30px minmax(0,1fr) auto; }
   .delivery-toolbar { grid-template-columns:1fr auto; }
   .delivery-toolbar input { grid-column:1 / -1; }
-  .delivery-toolbar select { width:100%; }
   .delivery-item { gap:12px; }
   .delivery-main h3 { font-size:17px; }
   .delivery-proof { grid-template-columns:1fr 1fr; }
