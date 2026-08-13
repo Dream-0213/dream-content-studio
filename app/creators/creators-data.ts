@@ -17,6 +17,9 @@ export type WechatCreator = {
 
 export const creators: Creator[] = [
   {name:"是Dream呀",followers:"10W+",csdn:"https://blog.csdn.net/weixin_51390582?type=blog",juejin:"https://juejin.cn/user/765678294413181",zhihu:"https://www.zhihu.com/people/xu-yi-peng-21-72/posts",wechat:"https://mp.weixin.qq.com/s/BWHsOIV3Gm0BrUFS7JiwCQ"},
+  {name:"一键难忘",followers:"12W+",csdn:"https://blog.csdn.net/weixin_52908342?type=blog"},
+  {name:"中杯可乐多加冰",followers:"11W+",csdn:"https://blog.csdn.net/air__Heaven?type=blog",juejin:"https://juejin.cn/user/3435306702347432",zhihu:"https://www.zhihu.com/people/ling-sheng-87"},
+  {name:"鸽芷咕",followers:"8W+",csdn:"https://gezhigu.blog.csdn.net",juejin:"https://juejin.cn/user/2447965011313308",zhihu:"https://www.zhihu.com/people/--16-21-29",wechat:"https://mp.weixin.qq.com/s/GXIKSGt0E63y07u3b_LHNg"},
   {name:"硬核技术工作室",followers:"20W+",csdn:"https://blog.csdn.net/qq_46092061",zhihu:"https://www.zhihu.com/people/dream-22-25-79",wechat:"https://mp.weixin.qq.com/s/U6lsoAs6AmzGcRSaMIDJfQ"},
   {name:"xcLeigh",followers:"15W+",csdn:"https://xcleigh.blog.csdn.net/",juejin:"https://juejin.cn/user/1775071503323875",zhihu:"https://www.zhihu.com/people/xcleigh",wechat:"https://mp.weixin.qq.com/s/Y5Iq0z2z9_wLmHfO0X6HFA"},
   {name:"陈橘又青",followers:"15W+",csdn:"https://blog.csdn.net/m0_63947499",juejin:"https://juejin.cn/user/4429248864466519",zhihu:"https://www.zhihu.com/people/yu-jie-xin-an",wechat:"https://mp.weixin.qq.com/s/mGtDEO_X0URygCea8Uo2Pw"},
