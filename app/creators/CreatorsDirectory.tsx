@@ -34,7 +34,7 @@ export function WechatCreatorsDirectory({creators}: {creators: WechatCreator[]})
     {creators.map((creator, index) => <article className="wechat-creator-card" key={`${creator.name}-${creator.wechat}`}>
       <span className="creator-index">{String(index + 1).padStart(2,"0")}</span>
       <div><h3>{creator.name}</h3><span className="wechat-category">{creator.category}</span></div>
-      <strong>{creator.followers}</strong>
+      <strong><small>粉丝</small>{creator.followers}</strong>
       <a href={creator.wechat} target="_blank" rel="noreferrer">查看公众号文章 ↗</a>
     </article>)}
   </div>;

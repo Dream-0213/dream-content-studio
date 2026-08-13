@@ -60,7 +60,6 @@ export const creators: Creator[] = [
   {name:"可涵",followers:"1W+",csdn:"https://blog.csdn.net/hanwangyyds",juejin:"https://juejin.cn/user/1933380820410074",zhihu:"https://www.zhihu.com/people/94-27-80-6",wechat:"https://mp.weixin.qq.com/s/fT5VJN15XlPfwqcy-Rz_fA"},
   {name:"承渊政道",followers:"10646",csdn:"https://lichengzheng.blog.csdn.net"},
   {name:"七月",followers:"1W+",csdn:"https://blog.csdn.net/2501_91062530"},
-  {name:"听水问浮游",followers:"1",csdn:"https://blog.csdn.net/2603_95185374"},
   {name:"Xxtaoaooo",followers:"1749",csdn:"https://blog.csdn.net/Rqaqedamancy"},
   {name:"未来可期叶",followers:"6625",csdn:"https://blog.csdn.net/yeyzhappy"},
   {name:"钮钴禄爱因斯晨",followers:"6625",csdn:"https://blog.csdn.net/2401_87533975"},
