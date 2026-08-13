@@ -14,7 +14,7 @@ export function CreatorsDirectory({creators}: {creators: Creator[]}) {
     <div className="creator-toolbar">
       <label htmlFor="creator-search">搜索博主</label>
       <input id="creator-search" value={query} onChange={event => setQuery(event.target.value)} placeholder="输入博主名称" />
-      <span>{visible.length} 位</span>
+      <span>{query.trim() ? `${visible.length} 位匹配` : "500+ 位"}</span>
     </div>
     <div className="creator-list">
       {visible.map((creator, index) => <article className="creator-row" key={`${creator.name}-${creator.csdn ?? creator.wechat ?? index}`}>

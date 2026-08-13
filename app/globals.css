@@ -151,8 +151,8 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
 .contact-notes h2 { font-size:38px; }
 .contact-notes ol { padding-left:22px; color:#58636d; line-height:2.2; }
 .creator-hero { min-height:520px; }
-.creator-hero-link { display:inline-flex; margin-top:30px; padding:12px 18px; border:1px solid rgba(255,255,255,.36); color:#fff; font-size:12px; font-weight:700; letter-spacing:.06em; }
-.creator-hero-link:hover { background:#fff; color:var(--navy); }
+.creator-hero-link { display:inline-flex; margin-top:30px; padding:12px 18px; border:1px solid #ff5a5f; color:#ff5a5f; font-size:12px; font-weight:800; letter-spacing:.06em; }
+.creator-hero-link:hover { background:#ff5a5f; color:#fff; }
 .creators-section { padding-top:70px; }
 .creator-toolbar { display:grid; grid-template-columns:auto minmax(220px,460px) auto; align-items:center; gap:18px; padding:0 0 28px; border-bottom:1px solid var(--navy); }
 .creator-toolbar label { font-size:13px; font-weight:700; letter-spacing:.08em; }
