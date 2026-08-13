@@ -31,12 +31,11 @@ nav a:not(.nav-cta):hover { color:var(--blue); }
 .button-ghost:hover { border-color:var(--navy); }
 .button-light { background:#fff; color:var(--navy); }
 .hero-proof { justify-self:end; width:min(100%,430px); padding:30px; background:var(--navy); color:#fff; box-shadow:0 34px 80px rgba(7,27,47,.18); }
-.hero-featured-result { padding-bottom:28px; border-bottom:1px solid rgba(255,255,255,.2); }
-.hero-featured-result p { margin:0 0 22px; color:#79a4bd; font:700 10px Arial,sans-serif; letter-spacing:.18em; }
-.hero-featured-result strong { display:block; color:var(--gold); font:500 clamp(52px,6vw,78px)/.9 Georgia,serif; }
-.hero-featured-result span { display:block; margin-top:12px; color:#d9e1e6; font-size:13px; }
-.hero-featured-result b { display:block; margin:22px 0 16px; font-size:17px; }
-.hero-featured-result a { color:#fff; font-size:12px; border-bottom:1px solid rgba(255,255,255,.55); }
+.hero-studio-proof { display:flex; align-items:center; gap:20px; padding-bottom:28px; border-bottom:1px solid rgba(255,255,255,.2); }
+.hero-studio-proof>span { flex:0 0 82px; width:82px; height:82px; display:grid; place-items:center; border:1px solid var(--gold); border-radius:50%; color:var(--gold); font:bold 13px Arial,sans-serif; }
+.hero-studio-proof p { margin:0 0 10px; color:#79a4bd; font:700 9px Arial,sans-serif; letter-spacing:.15em; }
+.hero-studio-proof strong { display:block; color:#fff; font:500 20px/1.5 Georgia,"Songti SC",serif; }
+.hero-studio-proof small { display:block; margin-top:9px; color:#aebdc7; font-size:11px; }
 .proof-stamp { display:flex; align-items:center; gap:18px; margin-bottom:46px; }
 .proof-stamp span { width:68px; height:68px; display:grid; place-items:center; border:1px solid var(--gold); border-radius:50%; color:#a66d14; font:bold 12px Arial; }
 .proof-stamp b { font-size:14px; line-height:1.6; letter-spacing:.08em; }

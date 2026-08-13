@@ -25,7 +25,7 @@ export default function Home() {
           <div className="hero-keywords" aria-label="热门服务"><Link href="/services/creator-campaign">CSDN KOL 投放</Link><Link href="/services/original-content">技术文章原创</Link><Link href="/services/distribution">公众号矩阵推广</Link></div>
         </div>
         <div className="hero-proof">
-          <div className="hero-featured-result"><p>RECENT GROWTH RESULT</p><strong>2W+</strong><span>程聚宝项目平均单篇阅读量</span><b>平台日增长 1000+ 用户</b><Link href="/cases/chengjubao-csdn-kol">查看完整案例 ↗</Link></div>
+          <div className="hero-studio-proof"><span>CSDN</span><div><p>TRUST &amp; CREATOR NETWORK</p><strong>懂技术，也懂开发者传播</strong><small>终身合作伙伴 · 首席合作伙伴</small></div></div>
           <div className="proof-metrics">
             <div><strong>300+</strong><span>万粉技术博主</span></div>
             <div><strong>700+</strong><span>内容分发博主</span></div>
@@ -37,10 +37,10 @@ export default function Home() {
       <PlatformStrip />
 
       <section className="result-ribbon" aria-label="代表性推广成果">
-        <Link href="/cases/chengjubao-csdn-kol"><span>程聚宝</span><strong>2W+</strong><small>平均单篇阅读量</small></Link>
         <Link href="/cases/feisuan-javaai"><span>飞算 JavaAI</span><strong>300 位</strong><small>万粉博主参与</small></Link>
         <Link href="/cases/huawei-kunpeng-ascend"><span>华为昇腾及鲲鹏</span><strong>300+ 篇</strong><small>技术文章交付</small></Link>
         <Link href="/cases/todesk-distribution"><span>ToDesk</span><strong>500 篇</strong><small>长期矩阵发布</small></Link>
+        <Link href="/creators"><span>创作者矩阵</span><strong>700+</strong><small>内容分发博主</small></Link>
       </section>
 
       <section className="section intro-section">
