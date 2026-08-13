@@ -103,6 +103,24 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
 .metrics-band div { padding:55px 30px; text-align:center; border-left:1px solid rgba(255,255,255,.16); }
 .metrics-band div:last-child { border-right:1px solid rgba(255,255,255,.16); }
 .metrics-band span { display:block; color:#b2c0ca; line-height:1.7; }
+.case-deliveries { background:#ece7de; }
+.delivery-toolbar { display:grid; grid-template-columns:auto minmax(220px,1fr) 150px auto; align-items:center; gap:16px; padding-bottom:26px; border-bottom:1px solid var(--navy); }
+.delivery-toolbar label { font-size:13px; font-weight:700; letter-spacing:.06em; }
+.delivery-toolbar input,.delivery-toolbar select { height:48px; border:1px solid #c8c6bf; background:#fff; padding:0 15px; color:var(--ink); font:inherit; outline:none; }
+.delivery-toolbar input:focus,.delivery-toolbar select:focus { border-color:var(--blue); box-shadow:0 0 0 3px rgba(14,77,114,.09); }
+.delivery-toolbar>span { color:var(--muted); font-size:13px; text-align:right; }
+.delivery-list { border-bottom:1px solid var(--navy); }
+.delivery-item { display:grid; grid-template-columns:48px minmax(0,1fr) minmax(210px,.38fr); gap:24px; align-items:center; min-height:150px; padding:24px 0; border-bottom:1px solid #c9c7c0; }
+.delivery-item:last-child { border-bottom:0; }
+.delivery-index { align-self:start; padding-top:3px; color:#a47a3d; font:italic 13px Georgia,serif; }
+.delivery-meta { display:flex; flex-wrap:wrap; align-items:center; gap:9px 14px; margin-bottom:13px; }
+.delivery-meta strong { color:var(--navy); font-size:15px; }
+.delivery-meta span { padding:5px 8px; background:#dce5e7; color:var(--blue); font-size:10px; font-weight:700; }
+.delivery-meta time { color:var(--muted); font-size:11px; }
+.delivery-main h3 { margin:0; max-width:820px; color:var(--navy); font:500 19px/1.55 Georgia,"Songti SC",serif; }
+.delivery-links { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px; }
+.delivery-links a { min-width:76px; padding:9px 10px; border:1px solid #c5c3bc; background:rgba(255,255,255,.38); text-align:center; font-size:11px; transition:.2s ease; }
+.delivery-links a:hover { background:var(--navy); border-color:var(--navy); color:#fff; }
 .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:10vw; }
 .about-grid p { font-size:17px; line-height:2; color:#56616b; }
 .founder-section { display:grid; grid-template-columns:minmax(280px,.78fr) minmax(0,1.22fr); gap:clamp(60px,10vw,150px); align-items:center; }
@@ -166,6 +184,10 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
   .creator-row { grid-template-columns:42px 1fr; padding:24px 0; }
   .creator-platforms { grid-column:2; justify-content:flex-start; }
   .wechat-creator-list { grid-template-columns:1fr; }
+  .delivery-toolbar { grid-template-columns:1fr 150px auto; }
+  .delivery-toolbar label { grid-column:1 / -1; }
+  .delivery-item { grid-template-columns:34px 1fr; }
+  .delivery-links { grid-column:2; justify-content:flex-start; }
   .metrics-band div { border-right:1px solid rgba(255,255,255,.16); border-bottom:1px solid rgba(255,255,255,.16); }
 }
 @media (max-width:600px) {
@@ -188,4 +210,9 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
   .creator-name { flex-direction:column; gap:7px; }
   .creator-platforms a { min-width:64px; }
   .wechat-creator-card { padding:22px 18px; grid-template-columns:30px minmax(0,1fr) auto; }
+  .delivery-toolbar { grid-template-columns:1fr auto; }
+  .delivery-toolbar input { grid-column:1 / -1; }
+  .delivery-toolbar select { width:100%; }
+  .delivery-item { gap:12px; }
+  .delivery-main h3 { font-size:17px; }
 }
