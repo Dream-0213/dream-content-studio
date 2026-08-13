@@ -18,8 +18,8 @@ export default function Home() {
         <div className="hero-proof">
           <div className="proof-stamp"><span>CSDN</span><b>终身合作伙伴<br />首席合作伙伴</b></div>
           <div className="proof-metrics">
-            <div><strong>100+</strong><span>万粉技术博主</span></div>
-            <div><strong>200+</strong><span>内容分发博主</span></div>
+            <div><strong>300+</strong><span>万粉技术博主</span></div>
+            <div><strong>700+</strong><span>内容分发博主</span></div>
             <div><strong>1000+</strong><span>私域技术创作者</span></div>
           </div>
         </div>
@@ -42,7 +42,7 @@ export default function Home() {
           <p className="eyebrow">TRUST &amp; REACH</p>
           <h2>专业背景与创作者网络，<br />让传播更可信</h2>
           <p>2025 年度 CSDN 全站 TOP 10 博主、CSDN 终身及首席合作伙伴、2024 年度华为云十佳博主、稀土掘金人工智能签约作者。</p>
-          <p>以技术理解力保障内容质量，以百余位万粉博主和千人创作者社群保障项目执行。</p>
+          <p>以技术理解力保障内容质量，以 300+ 位万粉博主、700+ 位内容分发博主和千人创作者社群保障项目执行。</p>
           <Link href="/about" className="text-link">查看完整介绍 <b>↗</b></Link>
         </div>
       </section>
