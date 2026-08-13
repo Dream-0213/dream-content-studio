@@ -121,6 +121,11 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
 .delivery-links { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px; }
 .delivery-links a { min-width:76px; padding:9px 10px; border:1px solid #c5c3bc; background:rgba(255,255,255,.38); text-align:center; font-size:11px; transition:.2s ease; }
 .delivery-links a:hover { background:var(--navy); border-color:var(--navy); color:#fff; }
+.huawei-deliveries { background:linear-gradient(180deg,#e8e3d9 0%,#f2eee6 100%); }
+.delivery-proof { display:grid; grid-template-columns:repeat(4,1fr); margin:-12px 0 48px; border-top:1px solid var(--navy); border-left:1px solid #bcbab3; }
+.delivery-proof div { min-height:130px; padding:24px; display:flex; flex-direction:column; justify-content:center; gap:8px; border-right:1px solid #bcbab3; border-bottom:1px solid #bcbab3; }
+.delivery-proof strong { color:var(--gold); font:500 38px Georgia,serif; }
+.delivery-proof span { color:#56616b; font-size:12px; }
 .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:10vw; }
 .about-grid p { font-size:17px; line-height:2; color:#56616b; }
 .founder-section { display:grid; grid-template-columns:minmax(280px,.78fr) minmax(0,1.22fr); gap:clamp(60px,10vw,150px); align-items:center; }
@@ -188,6 +193,7 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
   .delivery-toolbar label { grid-column:1 / -1; }
   .delivery-item { grid-template-columns:34px 1fr; }
   .delivery-links { grid-column:2; justify-content:flex-start; }
+  .delivery-proof { grid-template-columns:repeat(2,1fr); }
   .metrics-band div { border-right:1px solid rgba(255,255,255,.16); border-bottom:1px solid rgba(255,255,255,.16); }
 }
 @media (max-width:600px) {
@@ -215,4 +221,7 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
   .delivery-toolbar select { width:100%; }
   .delivery-item { gap:12px; }
   .delivery-main h3 { font-size:17px; }
+  .delivery-proof { grid-template-columns:1fr 1fr; }
+  .delivery-proof div { min-height:110px; padding:18px; }
+  .delivery-proof strong { font-size:31px; }
 }
