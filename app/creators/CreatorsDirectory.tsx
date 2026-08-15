@@ -63,3 +63,69 @@ export function WechatCreatorsDirectory({creators}: {creators: WechatCreator[]})
     </div>}
   </>;
 }
+
+type ExportRow = {
+  "博主名称": string;
+  "CSDN粉丝数": string;
+  "公众号粉丝数": string;
+  "内容方向": string;
+  "CSDN主页": string;
+  "掘金主页": string;
+  "知乎主页": string;
+  "公众号文章": string;
+  "小红书主页": string;
+};
+
+export function CreatorsExportButton({creators, wechatCreators}: {creators: Creator[]; wechatCreators: WechatCreator[]}) {
+  const [exporting, setExporting] = useState(false);
+
+  async function exportExcel() {
+    setExporting(true);
+    try {
+      const XLSX = await import("xlsx");
+      const merged = new Map<string, ExportRow>();
+
+      creators.forEach(creator => merged.set(creator.name, {
+        "博主名称": creator.name,
+        "CSDN粉丝数": creator.csdn ? creator.followers : "",
+        "公众号粉丝数": "",
+        "内容方向": "",
+        "CSDN主页": creator.csdn ?? "",
+        "掘金主页": creator.juejin ?? "",
+        "知乎主页": creator.zhihu ?? "",
+        "公众号文章": creator.wechat ?? "",
+        "小红书主页": creator.xiaohongshu ?? "",
+      }));
+
+      wechatCreators.forEach(creator => {
+        const current = merged.get(creator.name);
+        merged.set(creator.name, {
+          "博主名称": creator.name,
+          "CSDN粉丝数": current?.["CSDN粉丝数"] ?? "",
+          "公众号粉丝数": creator.followers,
+          "内容方向": creator.category,
+          "CSDN主页": current?.["CSDN主页"] ?? "",
+          "掘金主页": current?.["掘金主页"] ?? "",
+          "知乎主页": current?.["知乎主页"] ?? "",
+          "公众号文章": current?.["公众号文章"] || creator.wechat,
+          "小红书主页": current?.["小红书主页"] ?? "",
+        });
+      });
+
+      const worksheet = XLSX.utils.json_to_sheet([...merged.values()]);
+      worksheet["!cols"] = [
+        {wch:24}, {wch:14}, {wch:16}, {wch:16}, {wch:48}, {wch:48}, {wch:48}, {wch:58}, {wch:48},
+      ];
+      worksheet["!autofilter"] = {ref: worksheet["!ref"] ?? "A1:I1"};
+      const workbook = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(workbook, worksheet, "合作博主名单");
+      XLSX.writeFile(workbook, `Dream工作室合作博主名单-${new Date().toISOString().slice(0,10)}.xlsx`);
+    } finally {
+      setExporting(false);
+    }
+  }
+
+  return <button type="button" className="creator-export-button" onClick={exportExcel} disabled={exporting}>
+    {exporting ? "正在生成 Excel…" : "一键导出博主名单（Excel） ↓"}
+  </button>;
+}

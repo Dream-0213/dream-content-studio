@@ -223,12 +223,19 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
 .wechat-expand-button:hover { border-color:#fff; background:#fff; color:var(--navy); }
 .wechat-creators-section>.creator-note { color:#9fb1bd; }
 .creator-directory-heading { margin-bottom:48px; }
+.creator-export-section { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:60px; align-items:center; background:#0b263a; color:#fff; }
+.creator-export-section .eyebrow { color:#79b7d7; }
+.creator-export-section h2 { margin:10px 0 16px; color:#fff; font-size:clamp(34px,4vw,54px); }
+.creator-export-section p:last-child { max-width:720px; margin:0; color:#aec0cc; line-height:1.8; }
+.creator-export-button { min-width:300px; padding:18px 24px; border:1px solid #fff; background:#fff; color:var(--navy); font:800 13px Arial,sans-serif; letter-spacing:.05em; cursor:pointer; transition:.2s ease; }
+.creator-export-button:hover { border-color:var(--gold); background:var(--gold); color:#fff; }
+.creator-export-button:disabled { opacity:.65; cursor:wait; }
 
 @media (max-width:900px) {
   nav a:not(.nav-cta) { display:none; }
   .hero { grid-template-columns:1fr; align-items:start; gap:70px; }
   .hero-proof { justify-self:start; }
-  .intro-section,.identity-section,.section-heading,.workflow,.detail-layout,.about-grid,.contact-grid,.founder-section,.studio-intro { grid-template-columns:1fr; }
+  .intro-section,.identity-section,.section-heading,.workflow,.detail-layout,.about-grid,.contact-grid,.founder-section,.studio-intro,.creator-export-section { grid-template-columns:1fr; }
   .service-grid,.case-grid { grid-template-columns:repeat(2,1fr); }
   .result-ribbon { grid-template-columns:repeat(2,1fr); }
   .section-heading { gap:30px; }
@@ -271,6 +278,7 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
   .creator-platforms a { min-width:64px; }
   .wechat-creator-card { padding:22px 18px; grid-template-columns:30px minmax(0,1fr) auto; }
   .wechat-feature-count strong { font-size:50px; }
+  .creator-export-button { width:100%; min-width:0; }
   .delivery-toolbar { grid-template-columns:1fr auto; }
   .delivery-toolbar input { grid-column:1 / -1; }
   .delivery-item { gap:12px; }
