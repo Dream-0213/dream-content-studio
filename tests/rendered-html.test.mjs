@@ -62,3 +62,21 @@ test("商务合作页保留微信联系与加入入口", async () => {
   assert.match(html, /id="join-application"/);
   assert.match(html, /wechat-qr\.png/);
 });
+
+test("服务详情页提供明确行动入口且不重复当前服务", async () => {
+  const response = await render("/services/creator-campaign");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /让合适的技术博主/);
+  assert.match(html, /查看合作博主/);
+  assert.match(html, /合作前，先把三件事说清楚/);
+  assert.match(html, /看看其他服务/);
+  assert.doesNotMatch(html, /href="\/services\/creator-campaign" class="service-card"/);
+});
+
+test("首页优先展示代表性大规模案例", async () => {
+  const response = await render();
+  const html = await response.text();
+  assert.ok(html.indexOf("飞算 JavaAI") < html.indexOf("程聚宝 CSDN KOL 投放计划"));
+});

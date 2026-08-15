@@ -20,6 +20,17 @@ export function Header() {
         <Link href="/about">关于</Link>
         <Link href="/contact" className="nav-cta">商务合作</Link>
       </nav>
+      <details className="mobile-nav">
+        <summary>菜单</summary>
+        <div>
+          <Link href="/#services">服务</Link>
+          <Link href="/#cases">案例</Link>
+          <Link href="/creators">博主名单</Link>
+          <Link href="/#join">加入我们</Link>
+          <Link href="/about">关于</Link>
+          <Link href="/contact">商务合作</Link>
+        </div>
+      </details>
     </header></>
   );
 }
@@ -41,8 +52,9 @@ export function Footer() {
   );
 }
 
-export function ServiceGrid() {
-  return <div className="service-grid">{services.map((service) => (
+export function ServiceGrid({excludeSlug}: {excludeSlug?: string} = {}) {
+  const visibleServices = services.filter(service => service.slug !== excludeSlug);
+  return <div className={`service-grid${excludeSlug ? " service-grid-related" : ""}`}>{visibleServices.map((service) => (
     <Link href={`/services/${service.slug}`} className="service-card" key={service.slug}>
       <span className="service-number">{service.number}</span>
       <h3>{service.title}</h3>
