@@ -200,6 +200,9 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
 .creator-platforms a { min-width:72px; padding:9px 12px; border:1px solid var(--line); text-align:center; font-size:12px; transition:.2s ease; }
 .creator-platforms a:hover { background:var(--navy); border-color:var(--navy); color:#fff; }
 .creator-empty { padding:70px 0; text-align:center; color:var(--muted); }
+.creator-expand-wrap,.wechat-expand-wrap { display:flex; justify-content:center; padding-top:30px; }
+.creator-expand-button,.wechat-expand-button { min-width:280px; padding:14px 22px; border:1px solid var(--navy); background:transparent; color:var(--navy); font:700 12px Arial,sans-serif; letter-spacing:.05em; cursor:pointer; transition:.2s ease; }
+.creator-expand-button:hover { background:var(--navy); color:#fff; }
 .creator-note { margin:24px 0 0; color:var(--muted); font-size:12px; line-height:1.8; }
 .wechat-creators-section { background:var(--navy); color:#fff; scroll-margin-top:88px; }
 .wechat-feature-head { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:50px; align-items:end; margin-bottom:48px; }
@@ -216,6 +219,8 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
 .wechat-creator-card>strong small { display:block; margin-bottom:5px; color:var(--muted); font:700 10px Arial,sans-serif; letter-spacing:.12em; }
 .wechat-category { color:var(--blue); font-size:11px; font-weight:700; letter-spacing:.08em; }
 .wechat-creator-card a { grid-column:2 / 4; align-self:end; padding-top:14px; border-top:1px solid rgba(16,32,49,.16); color:var(--navy); font-size:12px; font-weight:600; }
+.wechat-expand-button { border-color:rgba(255,255,255,.45); color:#fff; }
+.wechat-expand-button:hover { border-color:#fff; background:#fff; color:var(--navy); }
 .wechat-creators-section>.creator-note { color:#9fb1bd; }
 .creator-directory-heading { margin-bottom:48px; }
 

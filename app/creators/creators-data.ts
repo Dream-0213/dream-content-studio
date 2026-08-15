@@ -12,7 +12,7 @@ export type WechatCreator = {
   name: string;
   followers: string;
   wechat: string;
-  category: "AI/人工智能" | "IT技术";
+  category: "AI/人工智能" | "IT技术" | "科技/数码" | "文化/生活" | "生活/文化" | "科普/知识" | "职场/教育" | "营销/运营";
 };
 
 export const creators: Creator[] = [
@@ -161,4 +161,43 @@ export const wechatCreators: WechatCreator[] = [
   {name:"采苓AI说",followers:"5000+",wechat:"https://mp.weixin.qq.com/s/7iH8astgYPJgYACsP0nuig",category:"AI/人工智能"},
   {name:"倔强的石头_",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/nKwYGAFPSB1CVEaSckhmAg",category:"AI/人工智能"},
   {name:"嵌入式硬核研究所",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/fsWM3P9LNr5bcoNiM-RHDg",category:"AI/人工智能"},
+  {name:"白丁的编程生活",followers:"2000+",wechat:"https://mp.weixin.qq.com/s/EufGBeLvmmQUOllKFfys4Q",category:"IT技术"},
+  {name:"可涵不会debug",followers:"160",wechat:"https://mp.weixin.qq.com/s/h9BVKFN0o7Y2TW0ldKlIbA",category:"IT技术"},
+  {name:"半亩花海RUI",followers:"100+",wechat:"https://mp.weixin.qq.com/s/G3xHib6BTdUj3GmM1BurTA",category:"IT技术"},
+  {name:"进哥文库",followers:"100+",wechat:"https://mp.weixin.qq.com/s/LnXObsBOF6QGCQLKwk2Ovg",category:"科技/数码"},
+  {name:"云边有个稻草人",followers:"490",wechat:"https://mp.weixin.qq.com/s/nn896dqKqD8hM6fTw82AOg",category:"IT技术"},
+  {name:"小茗互娱",followers:"10",wechat:"https://mp.weixin.qq.com/s/tYrFnvTJBPkdEBSJ_kOH9g",category:"科技/数码"},
+  {name:"七月小稻科技",followers:"3",wechat:"https://mp.weixin.qq.com/s/l5yWKaaHfCTWVbaNt976Gw?token=665178306&lang=zh_CN",category:"科技/数码"},
+  {name:"鞍排",followers:"185",wechat:"https://mp.weixin.qq.com/s/pC50VouOFk8lWBNzJKvxUw",category:"科技/数码"},
+  {name:"大白话老谢",followers:"113",wechat:"https://mp.weixin.qq.com/s/YUoZoTLzeR8uTII-zU95VQ",category:"科技/数码"},
+  {name:"国学八戒",followers:"480",wechat:"https://mp.weixin.qq.com/s/_KJHJdmEFvKjJF8BDx9Jwg",category:"文化/生活"},
+  {name:"Loyal Calm Zen",followers:"100+",wechat:"https://mp.weixin.qq.com/s/O-dqGlsFsVoXxzEz-DCYCw",category:"科技/数码"},
+  {name:"添砖AI",followers:"100+",wechat:"https://mp.weixin.qq.com/s/VzILU7RVW8oBCzfbMEPrsw",category:"AI/人工智能"},
+  {name:"爱因斯晨说技术",followers:"57",wechat:"https://mp.weixin.qq.com/s/zsJFL4g2NZ_6xct5IqS1Ww",category:"IT技术"},
+  {name:"玖果果",followers:"200+",wechat:"https://mp.weixin.qq.com/s/LNJqwDRt60omhiNLQQpbtw",category:"科普/知识"},
+  {name:"不呆头杂货铺",followers:"100",wechat:"https://mp.weixin.qq.com/s/UV0-LNrIK1G6VS7ptA9DrA",category:"AI/人工智能"},
+  {name:"WenJGo",followers:"100+",wechat:"https://mp.weixin.qq.com/s/PWIXqrvE9eZIOl2AEJNwvQ",category:"IT技术"},
+  {name:"zzz是张嘻嘻",followers:"370",wechat:"https://mp.weixin.qq.com/s/XkoYF4mTODutzNqImtOkZw",category:"职场/教育"},
+  {name:"baby的天下",followers:"100+",wechat:"https://mp.weixin.qq.com/s/2CIwMdBfsmWMdhGetZxyxA",category:"科技/数码"},
+  {name:"私域技术栈",followers:"100+",wechat:"https://mp.weixin.qq.com/s/XUVu4m8P2WCfH7pVrE6xFQ",category:"营销/运营"},
+  {name:"AI世界说小单",followers:"100+",wechat:"https://mp.weixin.qq.com/s/nhKLkoRt2Fy8zYM-gputnw",category:"AI/人工智能"},
+  {name:"AI研习笔记001",followers:"100+",wechat:"https://mp.weixin.qq.com/s/ZZbc2gcPJi4wb96cDspeSQ",category:"AI/人工智能"},
+  {name:"红茶的小故事",followers:"100+",wechat:"https://mp.weixin.qq.com/s/g5VNBMVwQXKu2PcZa7RATQ",category:"科技/数码"},
+  {name:"科技你张哥",followers:"100+",wechat:"https://mp.weixin.qq.com/s/XqZ5UBanlAh64ldnx3QW1w",category:"科技/数码"},
+  {name:"次元智笺小晨",followers:"100+",wechat:"https://mp.weixin.qq.com/s/JMdaZBYvCG4ObXYxwL6O2A",category:"科技/数码"},
+  {name:"AI小马哥",followers:"100+",wechat:"https://mp.weixin.qq.com/s/W0VmpwlWxeLyMK4DHqn2Zg",category:"AI/人工智能"},
+  {name:"凌序代码",followers:"100+",wechat:"https://mp.weixin.qq.com/s/Lg2C6ym9FJy3if8xkbNlfA",category:"IT技术"},
+  {name:"面试班",followers:"100+",wechat:"https://mp.weixin.qq.com/s/vg4KSymrjOg7lKY-BkZcKg",category:"职场/教育"},
+  {name:"科技脉冲数学",followers:"100+",wechat:"https://mp.weixin.qq.com/s/HEeEn9R1E07bHS5-7O2Sxw",category:"科技/数码"},
+  {name:"AI形策145",followers:"100+",wechat:"https://mp.weixin.qq.com/s/MwPQ9_Wma27T8wfPVuAS_w",category:"AI/人工智能"},
+  {name:"AI敲码局",followers:"100+",wechat:"https://mp.weixin.qq.com/s/DDVMBDwlQBDu_bXYAHsAiA",category:"AI/人工智能"},
+  {name:"星叠算力99",followers:"100+",wechat:"https://mp.weixin.qq.com/s/5c4_2OCPfJZFUebt0ODYXA",category:"科技/数码"},
+  {name:"星序AI工坊",followers:"100+",wechat:"https://mp.weixin.qq.com/s/lfonabAD0Co1cOGcVm7nkQ",category:"AI/人工智能"},
+  {name:"星叠云科技",followers:"100+",wechat:"https://mp.weixin.qq.com/s/MnGpqtJKAndkSyx9M2WRoQ",category:"科技/数码"},
+  {name:"AI代码集",followers:"100+",wechat:"https://mp.weixin.qq.com/s/XJCS_Bs0Okgexo-FP1MVgg",category:"AI/人工智能"},
+  {name:"UserTechHub",followers:"100+",wechat:"https://mp.weixin.qq.com/s/DULIZRtq7c3QMJJf6d3EvA",category:"科技/数码"},
+  {name:"正在走向自律1",followers:"145",wechat:"https://mp.weixin.qq.com/s/N9xnk5xq3c4X3hU8_ZNO9g",category:"AI/人工智能"},
+  {name:"柚子知AI遇",followers:"50+",wechat:"https://mp.weixin.qq.com/s/mFme2u45tCkTvf14VTNxbg",category:"AI/人工智能"},
+  {name:"鸽芷咕",followers:"100+",wechat:"https://mp.weixin.qq.com/s/GXIKSGt0E63y07u3b_LHNg",category:"AI/人工智能"},
+  {name:"聆风吟",followers:"50+",wechat:"https://mp.weixin.qq.com/s/xS_nMTmSlHomHj1G8XkDLA",category:"生活/文化"},
 ];
