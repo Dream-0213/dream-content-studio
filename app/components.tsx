@@ -16,6 +16,7 @@ export function Header() {
         <Link href="/#services">服务</Link>
         <Link href="/#cases">案例</Link>
         <Link href="/creators">博主名单</Link>
+        <Link href="/#join">加入我们</Link>
         <Link href="/about">关于</Link>
         <Link href="/contact" className="nav-cta">商务合作</Link>
       </nav>
