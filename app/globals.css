@@ -200,7 +200,13 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
 .creator-hero-link:hover { background:#ff5a5f; color:#fff; }
 .creator-hero-link-csdn { border-color:var(--blue); color:var(--blue); }
 .creator-hero-link-csdn:hover { background:var(--blue); color:#fff; }
-.creators-section { padding-top:70px; scroll-margin-top:88px; }
+.creators-section { background:linear-gradient(145deg,#eee8dd 0%,#f8f5ee 55%,#e8eff0 100%); scroll-margin-top:88px; }
+.creator-feature-head { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:50px; align-items:end; margin-bottom:48px; }
+.creator-feature-head h2 { margin:10px 0 16px; font-size:clamp(38px,5vw,66px); }
+.creator-feature-head p:last-child { max-width:690px; color:#5b6872; line-height:1.85; }
+.creator-feature-count { min-width:210px; padding-left:34px; border-left:1px solid rgba(7,27,47,.2); }
+.creator-feature-count strong { display:block; color:var(--gold); font:500 64px Georgia,serif; }
+.creator-feature-count span { color:#586671; font-size:13px; }
 .creator-toolbar { display:grid; grid-template-columns:auto minmax(220px,460px) auto; align-items:center; gap:18px; padding:0 0 28px; border-bottom:1px solid var(--navy); }
 .creator-toolbar label { font-size:13px; font-weight:700; letter-spacing:.08em; }
 .creator-toolbar input { width:100%; height:48px; border:1px solid var(--line); background:#fff; padding:0 17px; color:var(--ink); font:inherit; outline:none; }
@@ -213,6 +219,15 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
 .creator-name { display:flex; align-items:baseline; gap:18px; }
 .creator-name h2 { margin:0; color:var(--navy); font:500 22px Georgia,"Songti SC",serif; }
 .creator-name strong { color:var(--gold); font:500 18px Georgia,serif; white-space:nowrap; }
+.creator-card-list { display:grid; grid-template-columns:repeat(2,1fr); border-top:1px solid #bcbab3; border-left:1px solid #bcbab3; border-bottom:0; }
+.creator-card-list .creator-row { min-height:180px; padding:25px 28px; display:grid; grid-template-columns:36px minmax(0,1fr) auto; grid-template-rows:1fr auto; gap:14px 20px; align-items:start; border-right:1px solid #bcbab3; border-bottom:1px solid #bcbab3; background:rgba(255,255,255,.58); transition:.22s ease; }
+.creator-card-list .creator-row:hover { background:#fff; transform:translateY(-3px); box-shadow:0 16px 38px rgba(7,27,47,.07); }
+.creator-card-list .creator-name { display:block; }
+.creator-card-list .creator-name h2 { font-size:21px; }
+.creator-followers { color:var(--gold); font:500 20px Georgia,serif; white-space:nowrap; }
+.creator-followers small { display:block; margin-bottom:5px; color:var(--muted); font:700 9px Arial,sans-serif; letter-spacing:.1em; }
+.creator-card-list .creator-platforms { grid-column:2 / 4; align-self:end; justify-content:flex-start; padding-top:14px; border-top:1px solid rgba(16,32,49,.16); }
+.creator-card-list .creator-platforms a { border-color:rgba(16,32,49,.2); background:rgba(255,255,255,.3); }
 .creator-platforms { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px; }
 .creator-platforms a { min-width:72px; padding:9px 12px; border:1px solid var(--line); text-align:center; font-size:12px; transition:.2s ease; }
 .creator-platforms a:hover { background:var(--navy); border-color:var(--navy); color:#fff; }
@@ -262,8 +277,11 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
   .creator-row { grid-template-columns:42px 1fr; padding:24px 0; }
   .creator-platforms { grid-column:2; justify-content:flex-start; }
   .wechat-creator-list { grid-template-columns:1fr; }
-  .wechat-feature-head { grid-template-columns:1fr; }
-  .wechat-feature-count { padding:0; border-left:0; }
+  .wechat-feature-head,.creator-feature-head { grid-template-columns:1fr; }
+  .wechat-feature-count,.creator-feature-count { padding:0; border-left:0; }
+  .creator-card-list { grid-template-columns:1fr; }
+  .creator-card-list .creator-row { grid-template-columns:36px minmax(0,1fr) auto; padding:25px 24px; }
+  .creator-card-list .creator-platforms { grid-column:2 / 4; }
   .delivery-toolbar { grid-template-columns:1fr auto; }
   .delivery-toolbar label { grid-column:1 / -1; }
   .delivery-item { grid-template-columns:34px 1fr; }
@@ -295,6 +313,9 @@ footer { background:#061625; color:#fff; padding:85px clamp(24px,7vw,112px) 28px
   .creator-row { grid-template-columns:30px 1fr; gap:12px; }
   .creator-name { flex-direction:column; gap:7px; }
   .creator-platforms a { min-width:64px; }
+  .creator-card-list .creator-row { grid-template-columns:30px minmax(0,1fr) auto; gap:12px; padding:22px 18px; }
+  .creator-card-list .creator-platforms { grid-column:2 / 4; }
+  .creator-feature-count strong { font-size:50px; }
   .wechat-creator-card { padding:22px 18px; grid-template-columns:30px minmax(0,1fr) auto; }
   .wechat-feature-count strong { font-size:50px; }
   .creator-export-button { width:100%; min-width:0; }

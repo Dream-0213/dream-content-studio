@@ -25,10 +25,11 @@ export function CreatorsDirectory({creators}: {creators: Creator[]}) {
       <input id="creator-search" value={query} onChange={event => setQuery(event.target.value)} placeholder="输入博主名称" />
       <span>{normalizedQuery ? `${visible.length} 位匹配` : showAll ? `${visible.length} 位已展示` : `${visible.length} 位万粉以上`}</span>
     </div>
-    <div className="creator-list">
+    <div className="creator-list creator-card-list">
       {visible.map((creator, index) => <article className="creator-row" key={`${creator.name}-${creator.csdn ?? creator.wechat ?? index}`}>
         <span className="creator-index">{String(index + 1).padStart(2,"0")}</span>
-        <div className="creator-name"><h2>{creator.name}</h2><strong>{creator.followers}</strong></div>
+        <div className="creator-name"><h2>{creator.name}</h2></div>
+        <strong className="creator-followers"><small>CSDN 粉丝</small>{creator.followers}</strong>
         <div className="creator-platforms">
           {platforms.map(([key,label]) => creator[key] ? <a key={key} href={creator[key]} target="_blank" rel="noreferrer">{label} ↗</a> : null)}
         </div>
