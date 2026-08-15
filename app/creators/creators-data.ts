@@ -17,6 +17,7 @@ export type WechatCreator = {
 
 export const creators: Creator[] = [
   {name:"是Dream呀",followers:"10W+",csdn:"https://blog.csdn.net/weixin_51390582?type=blog",juejin:"https://juejin.cn/user/765678294413181",zhihu:"https://www.zhihu.com/people/xu-yi-peng-21-72/posts",wechat:"https://mp.weixin.qq.com/s/BWHsOIV3Gm0BrUFS7JiwCQ"},
+  {name:"1_bit",followers:"19W+",csdn:"https://blog.csdn.net/A757291228",wechat:"https://mp.weixin.qq.com/s/HFVU08NwmMMaEa0VQ7MKsg"},
   {name:"几何心凉",followers:"30W+",csdn:"https://blog.csdn.net/jhxl_"},
   {name:"程序员洲洲",followers:"20W+",csdn:"https://blog.csdn.net/weixin_51484460",wechat:"https://mp.weixin.qq.com/s/0uVjZHNqvFkXTt1gbbuzOw"},
   {name:"不叫猫先生",followers:"4W+",csdn:"https://blog.csdn.net/qq_38951259?type=blog"},
