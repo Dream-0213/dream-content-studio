@@ -147,6 +147,7 @@ export const creators: Creator[] = [
 
 export const wechatCreators: WechatCreator[] = [
   {name:"程序员洲洲",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/0uVjZHNqvFkXTt1gbbuzOw",category:"IT技术"},
+  {name:"微妙风云",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/UfGX8cEMT2HaUGmrxdnw_w",category:"科技/数码"},
   {name:"万少",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/JAZ7ZbWIJjxYpQrXJroD6Q",category:"IT技术"},
   {name:"陈橘又青",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/UknUHFNWojxe57QuvD2s5A",category:"IT技术"},
   {name:"DreamsHome",followers:"5000+",wechat:"https://mp.weixin.qq.com/s/5KrlRCy_ZQFFXrdzjLSQxA",category:"AI/人工智能"},
