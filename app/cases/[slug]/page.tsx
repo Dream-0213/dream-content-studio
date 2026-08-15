@@ -8,6 +8,8 @@ import { HuaweiContentList } from "../HuaweiContentList";
 import { huaweiContents } from "../huawei-content";
 import { ChengjubaoContentList } from "../ChengjubaoContentList";
 import { chengjubaoContents } from "../chengjubao-content";
+import { XingkongContentList } from "../XingkongContentList";
+import { xingkongContents } from "../xingkong-content";
 
 export function generateStaticParams() { return cases.map(({slug}) => ({slug})); }
 export async function generateMetadata({params}: {params:Promise<{slug:string}>}): Promise<Metadata> {
@@ -36,6 +38,12 @@ export default async function CasePage({params}: {params:Promise<{slug:string}>}
       <div className="delivery-proof" aria-label="本批公开成果数据"><div><strong>114</strong><span>篇公开技术文章</span></div><div><strong>58</strong><span>位创作者成果</span></div><div><strong>16</strong><span>个核心技术专题</span></div><div><strong>227</strong><span>个多平台发布链接</span></div></div>
       <HuaweiContentList contents={huaweiContents} />
       <p className="creator-note">本页展示当前整理的公开成果，未展示博主粉丝量。文章标题、发布日期和链接来自项目交付记录；外部平台内容可能因平台调整而发生变化。</p>
+    </section>}
+    {slug === "xingkong-network" && <section className="section case-deliveries xingkong-deliveries">
+      <div className="section-heading"><div><p className="eyebrow">SCENARIO-DRIVEN CONTENT MATRIX</p><h2>真实组网场景<br/>持续内容增长</h2></div><p>从个人 NAS、远程办公到企业多门店互通，以连续发布的实测内容覆盖不同使用场景，让产品能力更容易被理解、搜索和验证。</p></div>
+      <div className="delivery-proof" aria-label="星空组网推广成果数据"><div><strong>1000+</strong><span>公众号平均阅读量</span></div><div><strong>稳定增长</strong><span>平台用户表现</span></div><div><strong>11</strong><span>位技术博主</span></div><div><strong>44</strong><span>个内容及发布链接</span></div></div>
+      <XingkongContentList contents={xingkongContents} />
+      <p className="creator-note">文章标题、发布日期和链接来自项目交付记录；外部平台内容可能因平台调整而发生变化。</p>
     </section>}
     <section className="section cases-section"><p className="eyebrow">MORE WORK</p><CaseGrid /></section>
   </PageShell>;
