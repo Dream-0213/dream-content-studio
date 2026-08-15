@@ -26,7 +26,7 @@ export const creators: Creator[] = [
   {name:"鸽芷咕",followers:"8W+",csdn:"https://gezhigu.blog.csdn.net",juejin:"https://juejin.cn/user/2447965011313308",zhihu:"https://www.zhihu.com/people/--16-21-29",wechat:"https://mp.weixin.qq.com/s/GXIKSGt0E63y07u3b_LHNg"},
   {name:"硬核技术工作室",followers:"20W+",csdn:"https://blog.csdn.net/qq_46092061",zhihu:"https://www.zhihu.com/people/dream-22-25-79",wechat:"https://mp.weixin.qq.com/s/U6lsoAs6AmzGcRSaMIDJfQ"},
   {name:"xcLeigh",followers:"15W+",csdn:"https://xcleigh.blog.csdn.net/",juejin:"https://juejin.cn/user/1775071503323875",zhihu:"https://www.zhihu.com/people/xcleigh",wechat:"https://mp.weixin.qq.com/s/Y5Iq0z2z9_wLmHfO0X6HFA"},
-  {name:"陈橘又青",followers:"15W+",csdn:"https://blog.csdn.net/m0_63947499",juejin:"https://juejin.cn/user/4429248864466519",zhihu:"https://www.zhihu.com/people/yu-jie-xin-an",wechat:"https://mp.weixin.qq.com/s/mGtDEO_X0URygCea8Uo2Pw"},
+  {name:"陈橘又青",followers:"15W+",csdn:"https://blog.csdn.net/m0_63947499",juejin:"https://juejin.cn/user/4429248864466519",zhihu:"https://www.zhihu.com/people/yu-jie-xin-an",wechat:"https://mp.weixin.qq.com/s/UknUHFNWojxe57QuvD2s5A"},
   {name:"二哈喇子！",followers:"17W+",csdn:"https://blog.csdn.net/rej177",juejin:"https://juejin.cn/user/3408942504361773",zhihu:"https://www.zhihu.com/people/79-5-62-5"},
   {name:"T-OPEN",followers:"2.6W+",csdn:"https://blog.csdn.net/weter_drop",juejin:"https://juejin.cn/user/4354508837094439",zhihu:"https://www.zhihu.com/people/ratel-1",wechat:"https://mp.weixin.qq.com/s/WFhCXCVYOrca1du402_y9A"},
   {name:"一只牛博",followers:"2.8W+",csdn:"https://blog.csdn.net/Mrxiao_bo",juejin:"https://juejin.cn/user/1722263248317024",zhihu:"https://www.zhihu.com/people/zhong-xian-sen-51-54/posts",wechat:"https://mp.weixin.qq.com/s/ZFB23O8Bll-N60l8p87S_g"},
@@ -145,6 +145,7 @@ export const creators: Creator[] = [
 export const wechatCreators: WechatCreator[] = [
   {name:"程序员洲洲",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/0uVjZHNqvFkXTt1gbbuzOw",category:"IT技术"},
   {name:"万少",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/JAZ7ZbWIJjxYpQrXJroD6Q",category:"IT技术"},
+  {name:"陈橘又青",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/UknUHFNWojxe57QuvD2s5A",category:"IT技术"},
   {name:"DreamsHome",followers:"5000+",wechat:"https://mp.weixin.qq.com/s/5KrlRCy_ZQFFXrdzjLSQxA",category:"AI/人工智能"},
   {name:"风口IT猪的成长录",followers:"1W+",wechat:"https://mp.weixin.qq.com/s/ncRevdAFKvDmBmOOyh2nNw",category:"IT技术"},
   {name:"小博测试成长之路",followers:"6000+",wechat:"https://mp.weixin.qq.com/s/6d5o6iSnWSsQdKFCXoF9hA",category:"IT技术"},
