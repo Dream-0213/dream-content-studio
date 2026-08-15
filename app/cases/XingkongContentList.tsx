@@ -23,7 +23,7 @@ export function XingkongContentList({contents}: {contents: XingkongContent[]}) {
           <div className="delivery-meta"><strong>{item.name}</strong><span>已发布</span><time>{item.date}</time></div>
           <h3>{item.title}</h3>
         </div>
-        <div className="delivery-links">{item.links.map(link => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label} ↗</a>)}</div>
+        <div className="delivery-links">{item.links.map(link => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label}</a>)}</div>
       </article>)}
       {visible.length === 0 && <p className="creator-empty">没有找到匹配的案例内容。</p>}
     </div>

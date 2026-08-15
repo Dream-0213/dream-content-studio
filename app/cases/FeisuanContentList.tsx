@@ -42,7 +42,7 @@ export function FeisuanContentList({contents}: {contents: FeisuanContent[]}) {
           <h3>{item.title}</h3>
         </div>
         <div className="delivery-links">
-          {item.links.map(url => <a key={url} href={url} target="_blank" rel="noreferrer">{platformName(url)} ↗</a>)}
+          {item.links.map(url => <a key={url} href={url} target="_blank" rel="noreferrer">{platformName(url)}</a>)}
         </div>
       </article>)}
       {visible.length === 0 && <p className="creator-empty">没有找到匹配的公开内容。</p>}

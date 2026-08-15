@@ -31,14 +31,14 @@ export function CreatorsDirectory({creators}: {creators: Creator[]}) {
         <div className="creator-name"><h2>{creator.name}</h2></div>
         <strong className="creator-followers"><small>CSDN 粉丝</small>{creator.followers}</strong>
         <div className="creator-platforms">
-          {platforms.map(([key,label]) => creator[key] ? <a key={key} href={creator[key]} target="_blank" rel="noreferrer">{label} ↗</a> : null)}
+          {platforms.map(([key,label]) => creator[key] ? <a key={key} href={creator[key]} target="_blank" rel="noreferrer">{label}</a> : null)}
         </div>
       </article>)}
       {visible.length === 0 && <p className="creator-empty">没有找到匹配的博主。</p>}
     </div>
     {!normalizedQuery && lowerFollowerCount > 0 && <div className="creator-expand-wrap">
       <button type="button" className="creator-expand-button" aria-expanded={showAll} onClick={() => setShowAll(value => !value)}>
-        {showAll ? "收起万粉以下博主 ↑" : `查看万粉以下博主（${lowerFollowerCount} 位） ↓`}
+        {showAll ? "收起万粉以下博主" : `查看万粉以下博主（${lowerFollowerCount} 位）`}
       </button>
     </div>}
   </>;
@@ -54,12 +54,12 @@ export function WechatCreatorsDirectory({creators}: {creators: WechatCreator[]})
       <span className="creator-index">{String(index + 1).padStart(2,"0")}</span>
       <div><h3>{creator.name}</h3><span className="wechat-category">{creator.category}</span></div>
       <strong><small>粉丝</small>{creator.followers}</strong>
-      <a href={creator.wechat} target="_blank" rel="noreferrer">查看公众号文章 ↗</a>
+      <a href={creator.wechat} target="_blank" rel="noreferrer">查看公众号文章</a>
     </article>)}
     </div>
     {lowerFollowerCount > 0 && <div className="wechat-expand-wrap">
       <button type="button" className="wechat-expand-button" aria-expanded={showAll} onClick={() => setShowAll(value => !value)}>
-        {showAll ? "收起更多公众号博主 ↑" : `查看更多公众号博主（${lowerFollowerCount} 位） ↓`}
+        {showAll ? "收起更多公众号博主" : `查看更多公众号博主（${lowerFollowerCount} 位）`}
       </button>
     </div>}
   </>;
@@ -127,6 +127,6 @@ export function CreatorsExportButton({creators, wechatCreators}: {creators: Crea
   }
 
   return <button type="button" className="creator-export-button" onClick={exportExcel} disabled={exporting}>
-    {exporting ? "正在生成 Excel…" : "一键导出博主名单（Excel） ↓"}
+    {exporting ? "正在生成 Excel…" : "一键导出博主名单（Excel）"}
   </button>;
 }

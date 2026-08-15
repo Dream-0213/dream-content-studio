@@ -27,7 +27,7 @@ export function ChengjubaoContentList({contents}: {contents: ChengjubaoContent[]
       {visible.map((item, index) => <article className="delivery-item" key={item.name}>
         <span className="delivery-index">{String(index + 1).padStart(2,"0")}</span>
         <div className="delivery-main"><div className="delivery-meta"><strong>{item.name}</strong><span>已发布</span></div><h3>程聚宝开发者内容推广</h3></div>
-        <div className="delivery-links">{item.links.map(link => <a key={link} href={link} target="_blank" rel="noreferrer">{platformName(link)} ↗</a>)}</div>
+        <div className="delivery-links">{item.links.map(link => <a key={link} href={link} target="_blank" rel="noreferrer">{platformName(link)}</a>)}</div>
       </article>)}
     </div>
   </>;

@@ -1,15 +1,15 @@
 import type { AnchorHTMLAttributes } from "react";
 import { cases, platforms, services } from "./data";
 
-export function Link({href, ...props}: AnchorHTMLAttributes<HTMLAnchorElement> & {href: string}) {
-  return <a href={href} {...props} />;
+export function Link({href, children, ...props}: AnchorHTMLAttributes<HTMLAnchorElement> & {href: string}) {
+  return <a href={href} {...props}>{children}</a>;
 }
 
 export function Header() {
   return (
-    <header className="site-header">
+    <><a className="skip-link" href="#main-content">跳到主要内容</a><header className="site-header">
       <Link href="/" className="brand" aria-label="Dream内容推广工作室首页">
-        <img className="brand-logo" src="/dream-logo.png" alt="" />
+        <img className="brand-logo" src="/dream-logo.png" alt="" width="1254" height="1254" />
         <span><b>DREAM</b><small>内容推广工作室</small></span>
       </Link>
       <nav aria-label="主导航">
@@ -20,7 +20,7 @@ export function Header() {
         <Link href="/about">关于</Link>
         <Link href="/contact" className="nav-cta">商务合作</Link>
       </nav>
-    </header>
+    </header></>
   );
 }
 
@@ -29,14 +29,13 @@ export function Footer() {
     <footer>
       <div className="footer-main">
         <div>
-          <p className="eyebrow light">DREAM CONTENT STUDIO</p>
           <h2>让好产品，被开发者看见。</h2>
         </div>
-        <Link href="/contact" className="button button-light">聊聊你的推广目标 <span>↗</span></Link>
+        <Link href="/contact" className="button button-light">聊聊你的推广目标</Link>
       </div>
       <div className="footer-bottom">
         <span>© 2026 Dream内容推广工作室</span>
-        <span>技术内容营销 · 博主矩阵推广 · 开发者传播</span>
+        <span>技术内容营销 / 博主矩阵推广 / 开发者传播</span>
       </div>
     </footer>
   );
@@ -48,7 +47,7 @@ export function ServiceGrid() {
       <span className="service-number">{service.number}</span>
       <h3>{service.title}</h3>
       <p>{service.brief}</p>
-      <span className="text-link">了解服务 <b>↗</b></span>
+      <span className="text-link">了解服务</span>
     </Link>
   ))}</div>;
 }
@@ -60,7 +59,7 @@ export function CaseGrid() {
       <h3>{item.client}</h3>
       <div className="case-result"><strong>{item.result}</strong><span>{item.resultLabel}</span></div>
       <p>{item.summary}</p>
-      <span className="case-arrow">↗</span>
+      <span className="case-arrow" aria-hidden="true" />
     </Link>
   ))}</div>;
 }
@@ -70,5 +69,5 @@ export function PlatformStrip() {
 }
 
 export function PageShell({children}: {children: React.ReactNode}) {
-  return <><Header /><main>{children}</main><Footer /></>;
+  return <><Header /><main id="main-content">{children}</main><Footer /></>;
 }

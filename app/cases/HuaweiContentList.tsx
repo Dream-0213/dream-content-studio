@@ -32,7 +32,7 @@ export function HuaweiContentList({contents}: {contents: HuaweiContent[]}) {
           <h3>{item.title}</h3>
         </div>
         <div className="delivery-links">
-          {item.links.map(link => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label} ↗</a>)}
+          {item.links.map(link => <a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label}</a>)}
         </div>
       </article>)}
       {visible.length === 0 && <p className="creator-empty">没有找到匹配的技术内容。</p>}
