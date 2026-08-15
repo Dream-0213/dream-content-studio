@@ -44,7 +44,7 @@ export default function Home() {
         <Link href="/creators"><span>创作者矩阵</span><strong>700+</strong><small>内容分发博主</small></Link>
       </section>
 
-      <section className="section intro-section">
+      <section className="section home-section intro-section">
         <div><p className="eyebrow">WHY TECH CONTENT MARKETING</p><h2>技术内容营销，<br />不只是发文章</h2></div>
         <div className="intro-copy">
           <p>开发者不会因为一条广告就信任复杂产品。真正有效的技术品牌推广，需要把产品能力写成可验证的教程、测评和应用实践，再通过可信的技术博主进入搜索结果与开发者社区。</p>
@@ -53,17 +53,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section services-section" id="services">
+      <section className="section home-section services-section" id="services">
         <div className="section-heading"><div><p className="eyebrow">WHAT WE DO</p><h2>从一篇好内容，<br />到一场有声量的传播</h2></div><p>单篇合作、长期运营，或数百位博主参与的大型项目，都由一个接口统一推进。</p></div>
         <ServiceGrid />
       </section>
 
-      <section className="section cases-section" id="cases">
+      <section className="section home-section cases-section" id="cases">
         <div className="section-heading"><div><p className="eyebrow">TECH MARKETING CASES</p><h2>真实技术推广案例，<br />链接与结果都能查看</h2></div><p>覆盖 CSDN KOL 投放、AI 开发工具、国产算力生态和长期内容矩阵，每个重点案例均可查看公开交付内容。</p></div>
         <CaseGrid />
       </section>
 
-      <section className="section identity-section">
+      <section className="section home-section identity-section">
         <div className="identity-image-wrap"><img src="/dream-profile.png" alt="Dream工作室技术内容推广与创作者资源介绍" /></div>
         <div className="identity-copy">
           <p className="eyebrow">TRUST &amp; REACH</p>
@@ -74,7 +74,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section join-section" id="join">
+      <section className="section home-section join-section" id="join">
         <div className="join-intro">
           <p className="eyebrow">JOIN DREAM STUDIO</p>
           <h2>招贤纳士，<br />欢迎加入我们</h2>
@@ -90,8 +90,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="workflow section">
-        <div className="workflow-head"><p className="eyebrow light">HOW IT WORKS</p><h2>博主由你挑，<br />执行由我负责。</h2></div>
+      <section className="workflow section home-section">
+        <div className="workflow-head"><p className="eyebrow">HOW IT WORKS</p><h2>博主由你挑，<br />执行由我负责。</h2><p>从需求梳理到内容上线，每一步都有明确交付，让大型博主项目也能清晰推进。</p></div>
         <ol>
           <li><span>01</span><div><b>明确目标</b><p>了解产品、受众、平台与预算</p></div></li>
           <li><span>02</span><div><b>匹配资源</b><p>提供博主与内容方案供选择</p></div></li>
@@ -100,16 +100,16 @@ export default function Home() {
         </ol>
       </section>
 
-      <section className="section faq-section" id="faq">
+      <section className="section home-section faq-section" id="faq">
         <div className="section-heading"><div><p className="eyebrow">FREQUENTLY ASKED QUESTIONS</p><h2>技术品牌推广<br />常见问题</h2></div><p>从单篇原创到数百位博主参与的大型项目，都可以根据产品阶段、目标平台和预算灵活组合。</p></div>
         <div className="faq-list">{faqs.map(([question,answer],index)=><details key={question} open={index===0}><summary>{question}<span>＋</span></summary><p>{answer}</p></details>)}</div>
       </section>
 
-      <section className="section final-cta">
-        <p className="eyebrow">START A CONVERSATION</p>
+      <section className="section home-section final-cta">
+        <p className="eyebrow light">START A CONVERSATION</p>
         <h2>下一个被开发者看见的<br />技术品牌，会是你吗？</h2>
         <p>告诉我们产品方向、目标平台和推广规模，获取匹配的内容与博主合作方案。</p>
-        <Link href="/contact" className="button button-primary">商务合作 <span>↗</span></Link>
+        <Link href="/contact" className="button button-light">商务合作 <span>↗</span></Link>
       </section>
     </main>
     <Footer />
