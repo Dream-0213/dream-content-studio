@@ -10,6 +10,7 @@ import { ChengjubaoContentList } from "../ChengjubaoContentList";
 import { chengjubaoContents } from "../chengjubao-content";
 import { XingkongContentList } from "../XingkongContentList";
 import { xingkongContents } from "../xingkong-content";
+import { threeSixtyContents } from "../three-sixty-content";
 
 export function generateStaticParams() { return cases.map(({slug}) => ({slug})); }
 export async function generateMetadata({params}: {params:Promise<{slug:string}>}): Promise<Metadata> {
@@ -44,6 +45,17 @@ export default async function CasePage({params}: {params:Promise<{slug:string}>}
       <div className="delivery-proof" aria-label="星空组网推广成果数据"><div><strong>1000+</strong><span>公众号平均阅读量</span></div><div><strong>稳定增长</strong><span>平台用户表现</span></div><div><strong>11</strong><span>位技术博主</span></div><div><strong>44</strong><span>个内容及发布链接</span></div></div>
       <XingkongContentList contents={xingkongContents} />
       <p className="creator-note">文章标题、发布日期和链接来自项目交付记录；外部平台内容可能因平台调整而发生变化。</p>
+    </section>}
+    {slug === "360-ai" && <section className="section case-deliveries three-sixty-deliveries">
+      <div className="section-heading"><div><p className="eyebrow">SELECTED CSDN ARTICLES</p><h2>部分公开<br/>CSDN 内容</h2></div><p>围绕 GUI Agent 与 360 人工智能研究院技术成果，组织技术创作者从产品趋势、工作流落地和多模态研究等角度展开内容解读。以下展示部分已公开发布文章。</p></div>
+      <div className="delivery-list three-sixty-list">
+        {threeSixtyContents.map((item,index)=><article className="delivery-item" key={`${item.name}-${item.url}`}>
+          <span className="delivery-index">{String(index+1).padStart(2,"0")}</span>
+          <div className="delivery-main"><div className="delivery-meta"><strong>{item.name}</strong><span>已发布</span></div></div>
+          <div className="delivery-links"><a href={item.url} target="_blank" rel="noreferrer">查看 CSDN 文章 ↗</a></div>
+        </article>)}
+      </div>
+      <p className="creator-note">当前展示 19 条公开 CSDN 发布记录；未提供公开成稿链接的内容暂不展示。</p>
     </section>}
     <section className="section cases-section"><p className="eyebrow">MORE WORK</p><CaseGrid /></section>
   </PageShell>;
