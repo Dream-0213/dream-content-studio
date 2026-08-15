@@ -17,6 +17,10 @@ export type WechatCreator = {
 
 export const creators: Creator[] = [
   {name:"是Dream呀",followers:"10W+",csdn:"https://blog.csdn.net/weixin_51390582?type=blog",juejin:"https://juejin.cn/user/765678294413181",zhihu:"https://www.zhihu.com/people/xu-yi-peng-21-72/posts",wechat:"https://mp.weixin.qq.com/s/BWHsOIV3Gm0BrUFS7JiwCQ"},
+  {name:"几何心凉",followers:"30W+",csdn:"https://blog.csdn.net/jhxl_"},
+  {name:"程序员洲洲",followers:"20W+",csdn:"https://blog.csdn.net/weixin_51484460",wechat:"https://mp.weixin.qq.com/s/0uVjZHNqvFkXTt1gbbuzOw"},
+  {name:"不叫猫先生",followers:"4W+",csdn:"https://blog.csdn.net/qq_38951259?type=blog"},
+  {name:"凯冰",followers:"1W+",csdn:"https://blog.csdn.net/SDFsoul"},
   {name:"一键难忘",followers:"12W+",csdn:"https://blog.csdn.net/weixin_52908342?type=blog"},
   {name:"中杯可乐多加冰",followers:"11W+",csdn:"https://blog.csdn.net/air__Heaven?type=blog",juejin:"https://juejin.cn/user/3435306702347432",zhihu:"https://www.zhihu.com/people/ling-sheng-87"},
   {name:"鸽芷咕",followers:"8W+",csdn:"https://gezhigu.blog.csdn.net",juejin:"https://juejin.cn/user/2447965011313308",zhihu:"https://www.zhihu.com/people/--16-21-29",wechat:"https://mp.weixin.qq.com/s/GXIKSGt0E63y07u3b_LHNg"},
@@ -139,6 +143,8 @@ export const creators: Creator[] = [
 ];
 
 export const wechatCreators: WechatCreator[] = [
+  {name:"程序员洲洲",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/0uVjZHNqvFkXTt1gbbuzOw",category:"IT技术"},
+  {name:"万少",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/JAZ7ZbWIJjxYpQrXJroD6Q",category:"IT技术"},
   {name:"DreamsHome",followers:"5000+",wechat:"https://mp.weixin.qq.com/s/5KrlRCy_ZQFFXrdzjLSQxA",category:"AI/人工智能"},
   {name:"风口IT猪的成长录",followers:"1W+",wechat:"https://mp.weixin.qq.com/s/ncRevdAFKvDmBmOOyh2nNw",category:"IT技术"},
   {name:"小博测试成长之路",followers:"6000+",wechat:"https://mp.weixin.qq.com/s/6d5o6iSnWSsQdKFCXoF9hA",category:"IT技术"},
