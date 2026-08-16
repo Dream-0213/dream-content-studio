@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import type { Creator, WechatCreator } from "./creators-data";
 
 const platforms: Array<[keyof Creator, string]> = [
-  ["csdn", "CSDN"], ["juejin", "掘金"], ["zhihu", "知乎"], ["wechat", "公众号"], ["xiaohongshu", "小红书"],
+  ["csdn", "CSDN"], ["juejin", "掘金"], ["zhihu", "知乎"], ["wechat", "公众号"], ["xiaohongshu", "小红书"], ["oschina", "开源中国"], ["baidu", "百度星河"],
 ];
 
 function followerValue(value: string) {
@@ -75,6 +75,8 @@ type ExportRow = {
   "知乎主页": string;
   "公众号文章": string;
   "小红书主页": string;
+  "开源中国主页": string;
+  "百度星河主页": string;
 };
 
 export function CreatorsExportButton({creators, wechatCreators}: {creators: Creator[]; wechatCreators: WechatCreator[]}) {
@@ -96,6 +98,8 @@ export function CreatorsExportButton({creators, wechatCreators}: {creators: Crea
         "知乎主页": creator.zhihu ?? "",
         "公众号文章": creator.wechat ?? "",
         "小红书主页": creator.xiaohongshu ?? "",
+        "开源中国主页": creator.oschina ?? "",
+        "百度星河主页": creator.baidu ?? "",
       }));
 
       wechatCreators.forEach(creator => {
@@ -110,12 +114,14 @@ export function CreatorsExportButton({creators, wechatCreators}: {creators: Crea
           "知乎主页": current?.["知乎主页"] ?? "",
           "公众号文章": current?.["公众号文章"] || creator.wechat,
           "小红书主页": current?.["小红书主页"] ?? "",
+          "开源中国主页": current?.["开源中国主页"] ?? "",
+          "百度星河主页": current?.["百度星河主页"] ?? "",
         });
       });
 
       const worksheet = XLSX.utils.json_to_sheet([...merged.values()]);
       worksheet["!cols"] = [
-        {wch:24}, {wch:14}, {wch:16}, {wch:16}, {wch:48}, {wch:48}, {wch:48}, {wch:58}, {wch:48},
+        {wch:24}, {wch:14}, {wch:16}, {wch:16}, {wch:48}, {wch:48}, {wch:48}, {wch:58}, {wch:48}, {wch:48}, {wch:48},
       ];
       worksheet["!autofilter"] = {ref: worksheet["!ref"] ?? "A1:I1"};
       const workbook = XLSX.utils.book_new();

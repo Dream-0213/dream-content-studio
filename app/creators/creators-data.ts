@@ -6,6 +6,8 @@ export type Creator = {
   zhihu?: string;
   wechat?: string;
   xiaohongshu?: string;
+  oschina?: string;
+  baidu?: string;
 };
 
 export type WechatCreator = {
@@ -17,6 +19,10 @@ export type WechatCreator = {
 
 export const creators: Creator[] = [
   {name:"是Dream呀",followers:"10W+",csdn:"https://blog.csdn.net/weixin_51390582?type=blog",juejin:"https://juejin.cn/user/765678294413181",zhihu:"https://www.zhihu.com/people/xu-yi-peng-21-72/posts",wechat:"https://mp.weixin.qq.com/s/BWHsOIV3Gm0BrUFS7JiwCQ"},
+  {name:"计算机魔术师",followers:"1.1W+",csdn:"https://cpt-magician.blog.csdn.net/?type=blog",juejin:"https://juejin.cn/user/3294573386554446?share_token=43b5ec6a-5cfb-48bb-bb88-0ecc72512a5d",wechat:"https://mp.weixin.qq.com/s/uuJzgnm8usnXw1Z0lg1fBA"},
+  {name:"心无旁骛~",followers:"4.1W+",csdn:"https://blog.csdn.net/m0_63007797?type=lately",wechat:"https://mp.weixin.qq.com/s/mVMUaBTaXud93Nz31EgeiA",baidu:"https://aistudio.baidu.com/personalcenter/thirdview/2699972"},
+  {name:"wei_shuo",followers:"3.2W+",csdn:"https://blog.csdn.net/weixin_62765017",wechat:"https://mp.weixin.qq.com/s/5xTXv3CbpVYf9mh1bq9E7w",oschina:"https://my.oschina.net/u/6630594"},
+  {name:"Lucifer 三思而后行",followers:"25W+",csdn:"https://blog.csdn.net/m0_50546016"},
   {name:"1_bit",followers:"19W+",csdn:"https://blog.csdn.net/A757291228",wechat:"https://mp.weixin.qq.com/s/HFVU08NwmMMaEa0VQ7MKsg"},
   {name:"王小王-123",followers:"8W+",csdn:"https://wxw-123.blog.csdn.net/"},
   {name:"EXI-小洲",followers:"3W+",csdn:"https://blog.csdn.net/EXIxiaozhou"},
@@ -146,6 +152,9 @@ export const creators: Creator[] = [
 ];
 
 export const wechatCreators: WechatCreator[] = [
+  {name:"计算机魔术师",followers:"1000+",wechat:"https://mp.weixin.qq.com/s/uuJzgnm8usnXw1Z0lg1fBA",category:"IT技术"},
+  {name:"wei_shuo",followers:"1000+",wechat:"https://mp.weixin.qq.com/s/5xTXv3CbpVYf9mh1bq9E7w",category:"IT技术"},
+  {name:"心无旁骛~",followers:"100+",wechat:"https://mp.weixin.qq.com/s/mVMUaBTaXud93Nz31EgeiA",category:"IT技术"},
   {name:"程序员洲洲",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/0uVjZHNqvFkXTt1gbbuzOw",category:"IT技术"},
   {name:"微妙风云",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/UfGX8cEMT2HaUGmrxdnw_w",category:"科技/数码"},
   {name:"万少",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/JAZ7ZbWIJjxYpQrXJroD6Q",category:"IT技术"},

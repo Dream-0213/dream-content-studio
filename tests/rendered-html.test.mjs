@@ -50,6 +50,12 @@ test("博主矩阵保留两个名单入口和导出功能", async () => {
   assert.match(html, /id="csdn-creators"/);
   assert.match(html, /一键导出博主名单/);
   assert.match(html, /输入博主名称/);
+  assert.match(html, /Lucifer 三思而后行/);
+  assert.match(html, /心无旁骛~/);
+  assert.match(html, /计算机魔术师/);
+  assert.match(html, /wei_shuo/);
+  assert.match(html, /百度星河/);
+  assert.match(html, /开源中国/);
 });
 
 test("商务合作页保留微信联系与加入入口", async () => {
