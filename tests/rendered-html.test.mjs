@@ -55,6 +55,17 @@ test("博主矩阵保留两个名单入口和导出功能", async () => {
   assert.match(html, /计算机魔术师/);
   assert.match(html, /wei_shuo/);
   assert.match(html, /艾派森/);
+  assert.match(html, /Want595/);
+  assert.match(html, /独立开发日记/);
+  assert.match(html, /小虚竹说技术/);
+  assert.match(html, /编程探秘阁/);
+  assert.match(html, /一点一木AI实验室/);
+  assert.match(html, /数学建模岛/);
+  assert.match(html, /智网研习社/);
+  assert.match(html, /宝哥AGI/);
+  assert.match(html, /阿Q说代码/);
+  assert.match(html, /稻草人/);
+  assert.match(html, /小妖同学学AI/);
   assert.match(html, /百度星河/);
   assert.match(html, /开源中国/);
 });

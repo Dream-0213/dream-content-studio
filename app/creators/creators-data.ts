@@ -14,7 +14,7 @@ export type WechatCreator = {
   name: string;
   followers: string;
   wechat: string;
-  category: "AI/人工智能" | "IT技术" | "科技/数码" | "文化/生活" | "生活/文化" | "科普/知识" | "职场/教育" | "营销/运营";
+  category: "AI/人工智能" | "IT技术" | "编程/IT" | "建模/AI" | "科技/数码" | "文化/生活" | "生活/文化" | "科普/知识" | "职场/教育" | "营销/运营";
 };
 
 export const creators: Creator[] = [
@@ -153,6 +153,17 @@ export const creators: Creator[] = [
 ];
 
 export const wechatCreators: WechatCreator[] = [
+  {name:"Want595",followers:"2W+",wechat:"https://mp.weixin.qq.com/s/oCi-zEzyqu8ATU66R4qtMA",category:"AI/人工智能"},
+  {name:"独立开发日记",followers:"1.1W+",wechat:"https://mp.weixin.qq.com/s/dJdUnXoU9PIgDf0ZURAF5w",category:"IT技术"},
+  {name:"小虚竹说技术",followers:"1W+",wechat:"https://mp.weixin.qq.com/s/nlUGeZ8jlLbfTJDHnJ6z3A",category:"AI/人工智能"},
+  {name:"编程探秘阁",followers:"7000+",wechat:"https://mp.weixin.qq.com/s/8c1PABQMKKb3n_GRvMcnJw",category:"IT技术"},
+  {name:"一点一木AI实验室",followers:"6000+",wechat:"https://mp.weixin.qq.com/s/Y8ZDIRX2TH0q_PLFhcgfKA?scene=1&click_id=1823030779",category:"IT技术"},
+  {name:"数学建模岛",followers:"6000+",wechat:"https://mp.weixin.qq.com/s/5w1dlPA8fF6SwjdN635geA",category:"建模/AI"},
+  {name:"智网研习社",followers:"5000+",wechat:"https://mp.weixin.qq.com/s/H3XXhmtHf1vOLeGPulY3UQ",category:"IT技术"},
+  {name:"宝哥AGI",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/ZP83oTSJLVMiQT7aiETNug",category:"AI/人工智能"},
+  {name:"阿Q说代码",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/R1dWWnrfaNmfasR9lriYQw",category:"IT技术"},
+  {name:"稻草人",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/xDSeONODr2u0ZYfIitt3Zw",category:"编程/IT"},
+  {name:"小妖同学学AI",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/df12RQub6CdtC5I1KtKUeg",category:"AI/人工智能"},
   {name:"艾派森",followers:"5000+",wechat:"https://mp.weixin.qq.com/s/pVSS7fmXGOv2tBKXhOTF8A",category:"IT技术"},
   {name:"计算机魔术师",followers:"1000+",wechat:"https://mp.weixin.qq.com/s/uuJzgnm8usnXw1Z0lg1fBA",category:"IT技术"},
   {name:"wei_shuo",followers:"1000+",wechat:"https://mp.weixin.qq.com/s/5xTXv3CbpVYf9mh1bq9E7w",category:"IT技术"},
@@ -163,20 +174,20 @@ export const wechatCreators: WechatCreator[] = [
   {name:"陈橘又青",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/UknUHFNWojxe57QuvD2s5A",category:"IT技术"},
   {name:"DreamsHome",followers:"5000+",wechat:"https://mp.weixin.qq.com/s/5KrlRCy_ZQFFXrdzjLSQxA",category:"AI/人工智能"},
   {name:"风口IT猪的成长录",followers:"1W+",wechat:"https://mp.weixin.qq.com/s/ncRevdAFKvDmBmOOyh2nNw",category:"IT技术"},
-  {name:"小博测试成长之路",followers:"6000+",wechat:"https://mp.weixin.qq.com/s/6d5o6iSnWSsQdKFCXoF9hA",category:"IT技术"},
-  {name:"IT掌门人",followers:"5000+",wechat:"https://mp.weixin.qq.com/s/PG9TDz5RA-h6VAmLN1lFdA",category:"IT技术"},
+  {name:"小博测试成长之路",followers:"6000+",wechat:"https://mp.weixin.qq.com/s/o31b_vvPAAwgyOKfcbgPOw",category:"IT技术"},
+  {name:"IT掌门人",followers:"1W+",wechat:"https://mp.weixin.qq.com/s/PG9TDz5RA-h6VAmLN1lFdA",category:"IT技术"},
   {name:"IT精英说",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/rNpXBdIAh01SjDNOYMOvRA",category:"IT技术"},
   {name:"全栈若城",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/y-MKlCEVlag4GBJlVbHSXQ",category:"IT技术"},
   {name:"花宝宝 Dev",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/o_5exG7rAEFB21OXaaltcQ",category:"IT技术"},
-  {name:"一只牛博",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/w915D2EqP-e31WvDlDo_4g",category:"AI/人工智能"},
+  {name:"一只牛博",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/ZFB23O8Bll-N60l8p87S_g",category:"AI/人工智能"},
   {name:"小冷coding",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/J1r_3zH4f4jXfukFtVUGYw",category:"IT技术"},
-  {name:"xcLeigh",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/pYHjQVkgoWLzxsLphdekyw",category:"AI/人工智能"},
+  {name:"xcLeigh",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/Y5Iq0z2z9_wLmHfO0X6HFA",category:"AI/人工智能"},
   {name:"阿虎玩AI",followers:"3000+",wechat:"http://mp.weixin.qq.com/s?__biz=Mzg4NjU3NjI2MQ==&mid=2247485689&idx=1&sn=78d8efe33e2c8264cac5bb6b1f11eb08&chksm=ce51abfbd5cdf6a5c2f0dac08384bd5acb8c5b6d5ff16bbb79eff82250392d01e460133ac79b&scene=126&sessionid=1786091946&subscene=91&clicktime=1786091964&enterid=1786091964#rd",category:"AI/人工智能"},
   {name:"Lethehong",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/TnpxD2Tsbi-x4bxKH-aHsA",category:"AI/人工智能"},
   {name:"采苓AI说",followers:"5000+",wechat:"https://mp.weixin.qq.com/s/7iH8astgYPJgYACsP0nuig",category:"AI/人工智能"},
-  {name:"倔强的石头_",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/nKwYGAFPSB1CVEaSckhmAg",category:"AI/人工智能"},
+  {name:"倔强的石头_",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/BlmiKEyI3pFqTICISoqEcg",category:"AI/人工智能"},
   {name:"嵌入式硬核研究所",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/fsWM3P9LNr5bcoNiM-RHDg",category:"AI/人工智能"},
-  {name:"白丁的编程生活",followers:"2000+",wechat:"https://mp.weixin.qq.com/s/EufGBeLvmmQUOllKFfys4Q",category:"IT技术"},
+  {name:"白丁的编程生活",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/EufGBeLvmmQUOllKFfys4Q",category:"IT技术"},
   {name:"可涵不会debug",followers:"160",wechat:"https://mp.weixin.qq.com/s/h9BVKFN0o7Y2TW0ldKlIbA",category:"IT技术"},
   {name:"半亩花海RUI",followers:"100+",wechat:"https://mp.weixin.qq.com/s/G3xHib6BTdUj3GmM1BurTA",category:"IT技术"},
   {name:"进哥文库",followers:"100+",wechat:"https://mp.weixin.qq.com/s/LnXObsBOF6QGCQLKwk2Ovg",category:"科技/数码"},
