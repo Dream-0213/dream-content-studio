@@ -194,7 +194,7 @@ footer { padding:72px var(--page-x) 28px; background:#051722; color:#fff; }
 .service-next { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:54px; align-items:center; background:var(--navy); color:#fff; }
 .service-next h2 { max-width:19ch; color:#fff; font-size:clamp(34px,4.2vw,58px); }
 .service-next p { max-width:60ch; margin:23px 0 0; color:#b7cad3; line-height:1.8; }
-.metrics-band { padding:0 var(--page-x); display:grid; grid-template-columns:repeat(3,1fr); background:var(--navy); color:#fff; }
+.metrics-band { padding:0 var(--page-x); display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); background:var(--navy); color:#fff; }
 .metrics-band div { min-height:130px; padding:36px 28px; display:grid; place-items:center; text-align:center; border-left:1px solid var(--line-dark); }
 .metrics-band div:last-child { border-right:1px solid var(--line-dark); }
 .metrics-band span { max-width:26ch; color:#c0d1d9; line-height:1.7; }

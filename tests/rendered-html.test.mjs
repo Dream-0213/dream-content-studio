@@ -97,4 +97,13 @@ test("首页优先展示代表性大规模案例", async () => {
   const response = await render();
   const html = await response.text();
   assert.ok(html.indexOf("飞算 JavaAI") < html.indexOf("程聚宝 CSDN KOL 投放计划"));
+  assert.match(html, /总阅读量达 200W\+/);
+});
+
+test("飞算 JavaAI 案例展示总阅读量", async () => {
+  const response = await render("/cases/feisuan-javaai");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /项目总阅读量/);
+  assert.match(html, /200W\+/);
 });

@@ -24,7 +24,8 @@ export default async function CasePage({params}: {params:Promise<{slug:string}>}
     <section className="metrics-band">{item.metrics.map(x=><div key={x}><span>{x}</span></div>)}</section>
     <section className="section detail-layout"><aside className="detail-aside">{item.tag}</aside><div className="detail-content"><h2>{item.result} {item.resultLabel}</h2><p>{item.summary} Dream 工作室统一负责博主招募、内容方向、文章审核、发布时间安排及最终链接统计，让品牌方只需一个接口即可掌握整体进度。</p></div></section>
     {slug === "feisuan-javaai" && <section className="section case-deliveries">
-      <div className="section-heading"><div><h2>公开内容名单</h2></div><p>项目整体由 300 位万粉博主参与。当前已整理 150 篇公开内容，收录 450 个多平台发布链接。</p></div>
+      <div className="section-heading"><div><h2>公开内容名单</h2></div><p>项目整体由 300 位万粉博主参与，总阅读量达 200W+。当前已整理 150 篇公开内容，收录 450 个多平台发布链接。</p></div>
+      <div className="delivery-proof" aria-label="飞算 JavaAI 推广成果数据"><div><strong>200W+</strong><span>项目总阅读量</span></div><div><strong>300</strong><span>位万粉技术博主</span></div><div><strong>150</strong><span>篇公开内容</span></div><div><strong>450</strong><span>个多平台发布链接</span></div></div>
       <FeisuanContentList contents={feisuanContents} />
       <p className="creator-note">文章标题、发布日期和链接来自项目交付记录；外部平台内容可能因平台调整而发生变化。</p>
     </section>}
