@@ -115,10 +115,13 @@ test("首页与案例详情展示新增阅读成果", async () => {
   assert.match(homeHtml, /100W\+/);
   assert.match(homeHtml, /篇均阅读量/);
   assert.match(homeHtml, /2W\+/);
+  assert.match(homeHtml, /1000W\+/);
 
   const todeskResponse = await render("/cases/todesk-distribution");
   assert.match(await todeskResponse.text(), /项目总阅读量 100W\+/);
 
   const huaweiResponse = await render("/cases/huawei-kunpeng-ascend");
-  assert.match(await huaweiResponse.text(), /篇均阅读量 2W\+/);
+  const huaweiHtml = await huaweiResponse.text();
+  assert.match(huaweiHtml, /篇均阅读量 2W\+/);
+  assert.match(huaweiHtml, /项目总阅读量 1000W\+/);
 });

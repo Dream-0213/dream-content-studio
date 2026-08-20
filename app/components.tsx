@@ -71,9 +71,11 @@ export function CaseGrid() {
       <div className="case-card-main">
         <span className="pill">{item.tag}</span>
         <h3>{item.client}</h3>
-        <div className="case-result">
-          <strong>{item.result}</strong>
-          <span>{item.resultLabel}</span>
+        <div className={`case-result${item.secondaryResult ? " case-result-split" : ""}`}>
+          <div className="case-primary-result">
+            <strong>{item.result}</strong>
+            <span>{item.resultLabel}</span>
+          </div>
           {item.secondaryResult && <div className="case-secondary-result">
             <strong>{item.secondaryResult}</strong>
             <span>{item.secondaryResultLabel}</span>
