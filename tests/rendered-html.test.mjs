@@ -110,7 +110,10 @@ test("首页优先展示代表性大规模案例", async () => {
   const response = await render();
   const html = await response.text();
   assert.ok(html.indexOf("飞算 JavaAI") < html.indexOf("程聚宝 CSDN KOL 投放计划"));
+  assert.match(html, /350 位/);
   assert.match(html, /总阅读量达 200W\+/);
+  assert.match(html, /华为昇腾及鲲鹏/);
+  assert.match(html, /1000W\+/);
 });
 
 test("飞算 JavaAI 案例展示总阅读量", async () => {
@@ -119,6 +122,7 @@ test("飞算 JavaAI 案例展示总阅读量", async () => {
   const html = await response.text();
   assert.match(html, /项目总阅读量/);
   assert.match(html, /200W\+/);
+  assert.match(html, /350/);
 });
 
 test("首页与案例详情展示新增阅读成果", async () => {

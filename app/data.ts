@@ -51,10 +51,10 @@ export const cases = [
     slug: "feisuan-javaai",
     client: "飞算 JavaAI",
     tag: "大型博主矩阵",
-    result: "300 位",
+    result: "350 位",
     resultLabel: "万粉博主参与",
-    summary: "围绕 Java 开发、AI 辅助编程与开发效率，组织 300 位万粉博主参与原创内容推广，并完成 CSDN、知乎、公众号多平台传播，项目总阅读量达 200W+。",
-    metrics: ["300 位万粉博主参与", "总阅读量达 200W+", "部分文章单篇阅读量 1 万+", "覆盖 Java 与 AI 开发者人群"],
+    summary: "围绕 Java 开发、AI 辅助编程与开发效率，组织 350 位万粉博主参与原创内容推广，并完成 CSDN、知乎、公众号多平台传播，项目总阅读量达 200W+。",
+    metrics: ["350 位万粉博主参与", "总阅读量达 200W+", "部分文章单篇阅读量 1 万+", "覆盖 Java 与 AI 开发者人群"],
   },
   {
     slug: "todesk-distribution",

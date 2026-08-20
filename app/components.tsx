@@ -67,26 +67,29 @@ export function ServiceGrid({excludeSlug}: {excludeSlug?: string} = {}) {
 export function CaseGrid() {
   return <div className="case-grid">{cases.map((item) => {
     const isFeisuan = item.slug === "feisuan-javaai";
-    return <Link href={`/cases/${item.slug}`} className={`case-card${isFeisuan ? " case-card-featured" : ""}`} key={item.slug}>
+    const isHuawei = item.slug === "huawei-kunpeng-ascend";
+    const isFeatured = isFeisuan || isHuawei;
+    const hasInlineSecondary = Boolean(item.secondaryResult && !isFeatured);
+    return <Link href={`/cases/${item.slug}`} className={`case-card${isFeatured ? " case-card-featured" : ""}`} key={item.slug}>
       <div className="case-card-main">
         <span className="pill">{item.tag}</span>
         <h3>{item.client}</h3>
-        <div className={`case-result${item.secondaryResult ? " case-result-split" : ""}`}>
+        <div className={`case-result${hasInlineSecondary ? " case-result-split" : ""}`}>
           <div className="case-primary-result">
             <strong>{item.result}</strong>
             <span>{item.resultLabel}</span>
           </div>
-          {item.secondaryResult && <div className="case-secondary-result">
+          {hasInlineSecondary && <div className="case-secondary-result">
             <strong>{item.secondaryResult}</strong>
             <span>{item.secondaryResultLabel}</span>
           </div>}
         </div>
         <p>{item.summary}</p>
       </div>
-      {isFeisuan && <div className="case-card-highlight" aria-label="项目总阅读量达200万以上">
+      {isFeatured && <div className="case-card-highlight" aria-label={isFeisuan ? "项目总阅读量达200万以上" : "项目总阅读量达1000万以上，篇均阅读量达2万以上"}>
         <span>项目总阅读量</span>
-        <strong>200W+</strong>
-        <small>CSDN、知乎、公众号<br />多平台累计传播</small>
+        <strong>{isFeisuan ? "200W+" : "1000W+"}</strong>
+        <small>{isFeisuan ? <>CSDN、知乎、公众号<br />多平台累计传播</> : <>篇均阅读量 2W+<br />国产算力生态内容传播</>}</small>
       </div>}
       <span className="case-arrow" aria-hidden="true" />
     </Link>;
