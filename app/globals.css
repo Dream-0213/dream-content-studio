@@ -130,6 +130,9 @@ nav a:not(.nav-cta):hover::after { right:0; }
 .case-result { display:flex; flex-direction:column; gap:7px; padding-bottom:22px; border-bottom:1px solid var(--line); }
 .case-result strong { color:var(--accent); font-size:40px; line-height:1; font-weight:720; font-variant-numeric:tabular-nums; }
 .case-result span { color:var(--muted); font-size:12px; }
+.case-secondary-result { display:flex; align-items:baseline; gap:8px; margin-top:8px; }
+.case-secondary-result strong { color:var(--accent); font-size:20px; line-height:1; font-weight:750; }
+.case-secondary-result span { font-size:11px; }
 .case-card p { max-width:65ch; margin-bottom:28px; color:#5d707c; font-size:13px; line-height:1.85; }
 .case-arrow { position:absolute; right:28px; bottom:27px; width:26px; height:1px; background:var(--accent); }
 .case-arrow::after { content:""; position:absolute; right:0; top:-4px; width:8px; height:8px; border-top:1px solid var(--accent); border-right:1px solid var(--accent); transform:rotate(45deg); }

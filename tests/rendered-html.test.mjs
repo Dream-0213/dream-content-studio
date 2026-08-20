@@ -107,3 +107,18 @@ test("飞算 JavaAI 案例展示总阅读量", async () => {
   assert.match(html, /项目总阅读量/);
   assert.match(html, /200W\+/);
 });
+
+test("首页与案例详情展示新增阅读成果", async () => {
+  const homeResponse = await render();
+  const homeHtml = await homeResponse.text();
+  assert.match(homeHtml, /项目总阅读量/);
+  assert.match(homeHtml, /100W\+/);
+  assert.match(homeHtml, /篇均阅读量/);
+  assert.match(homeHtml, /2W\+/);
+
+  const todeskResponse = await render("/cases/todesk-distribution");
+  assert.match(await todeskResponse.text(), /项目总阅读量 100W\+/);
+
+  const huaweiResponse = await render("/cases/huawei-kunpeng-ascend");
+  assert.match(await huaweiResponse.text(), /篇均阅读量 2W\+/);
+});

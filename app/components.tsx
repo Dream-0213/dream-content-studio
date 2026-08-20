@@ -71,7 +71,14 @@ export function CaseGrid() {
       <div className="case-card-main">
         <span className="pill">{item.tag}</span>
         <h3>{item.client}</h3>
-        <div className="case-result"><strong>{item.result}</strong><span>{item.resultLabel}</span></div>
+        <div className="case-result">
+          <strong>{item.result}</strong>
+          <span>{item.resultLabel}</span>
+          {item.secondaryResult && <div className="case-secondary-result">
+            <strong>{item.secondaryResult}</strong>
+            <span>{item.secondaryResultLabel}</span>
+          </div>}
+        </div>
         <p>{item.summary}</p>
       </div>
       {isFeisuan && <div className="case-card-highlight" aria-label="项目总阅读量达200万以上">
