@@ -119,6 +119,12 @@ nav a:not(.nav-cta):hover::after { right:0; }
 .case-card:first-child h3,.case-card:first-child .case-result strong { color:#fff; }
 .case-card:first-child .case-result span,.case-card:first-child p { color:#b4c8d2; }
 .case-card:first-child .case-result { border-color:var(--line-dark); }
+.case-card-featured { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(190px,.65fr); gap:clamp(34px,5vw,72px); }
+.case-card-featured .case-card-main { min-width:0; display:flex; flex-direction:column; }
+.case-card-highlight { align-self:stretch; padding-left:clamp(28px,4vw,54px); border-left:1px solid var(--line-dark); display:flex; flex-direction:column; justify-content:center; }
+.case-card-highlight>span { color:#8fd8f4; font-size:11px; font-weight:750; letter-spacing:.08em; }
+.case-card-highlight>strong { margin:13px 0 15px; color:#fff; font-size:clamp(48px,6vw,78px); line-height:.95; letter-spacing:-.035em; font-weight:740; font-variant-numeric:tabular-nums; }
+.case-card-highlight>small { color:#b4c8d2; font-size:11px; line-height:1.75; }
 .pill { align-self:flex-start; padding:7px 10px; border-radius:999px; background:var(--accent-soft); color:var(--accent-strong); font-size:10px; font-weight:750; }
 .case-card h3 { margin:25px 0 23px; color:var(--navy); font-size:23px; line-height:1.4; font-weight:680; }
 .case-result { display:flex; flex-direction:column; gap:7px; padding-bottom:22px; border-bottom:1px solid var(--line); }
@@ -301,6 +307,9 @@ footer { padding:72px var(--page-x) 28px; background:#051722; color:#fff; }
   .intro-section,.identity-section,.join-section,.workflow,.detail-layout,.about-grid,.contact-grid,.founder-section,.studio-intro,.creator-export-section,.service-method,.service-next { grid-template-columns:1fr; }
   .service-grid,.service-grid-related,.case-grid { grid-template-columns:repeat(2,1fr); }
   .service-card,.service-card:nth-child(-n+2),.case-card,.case-card:first-child { grid-column:auto; }
+  .case-card-featured { grid-template-columns:1fr; gap:24px; }
+  .case-card-highlight { min-height:142px; padding:22px 0 0; border-left:0; border-top:1px solid var(--line-dark); justify-content:flex-start; }
+  .case-card-highlight>strong { font-size:56px; }
   .result-ribbon { grid-template-columns:repeat(2,1fr); }
   .metrics-band { grid-template-columns:1fr; }
   .metrics-band div { border-right:1px solid var(--line-dark); border-bottom:1px solid var(--line-dark); }
@@ -339,6 +348,7 @@ footer { padding:72px var(--page-x) 28px; background:#051722; color:#fff; }
   .service-grid,.service-grid-related,.case-grid,.join-grid,.workflow ol { grid-template-columns:1fr; }
   .service-card,.service-card:nth-child(-n+2) { min-height:270px; }
   .case-card,.case-card:first-child { min-height:330px; }
+  .case-card-featured { min-height:520px!important; }
   .footer-main,.footer-bottom { flex-direction:column; align-items:flex-start; }
   .footer-main { padding-bottom:48px; }
   .subhero { min-height:360px; padding-top:72px; padding-bottom:62px; }
