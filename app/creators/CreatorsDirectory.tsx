@@ -46,8 +46,9 @@ export function CreatorsDirectory({creators}: {creators: Creator[]}) {
 
 export function WechatCreatorsDirectory({creators}: {creators: WechatCreator[]}) {
   const [showAll, setShowAll] = useState(false);
-  const lowerFollowerCount = useMemo(() => creators.filter(item => followerValue(item.followers) < 3000).length, [creators]);
-  const visible = showAll ? creators : creators.filter(item => followerValue(item.followers) >= 3000);
+  const ordered = useMemo(() => [...creators].sort((a, b) => followerValue(b.followers) - followerValue(a.followers)), [creators]);
+  const lowerFollowerCount = useMemo(() => ordered.filter(item => followerValue(item.followers) < 3000).length, [ordered]);
+  const visible = showAll ? ordered : ordered.filter(item => followerValue(item.followers) >= 3000);
   return <>
     <div className="wechat-creator-list">
     {visible.map((creator, index) => <article className="wechat-creator-card" key={`${creator.name}-${creator.wechat}`}>
