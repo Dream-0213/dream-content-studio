@@ -125,7 +125,8 @@ nav a:not(.nav-cta):hover::after { right:0; }
 .case-card-highlight>strong { max-width:100%; margin:13px 0 15px; color:#fff; font-size:clamp(48px,7.4cqi,64px); line-height:.95; letter-spacing:-.035em; font-weight:740; font-variant-numeric:tabular-nums; white-space:nowrap; }
 .case-card-highlight>small { color:#b4c8d2; font-size:11px; line-height:1.75; white-space:pre-line; }
 .pill { align-self:flex-start; padding:7px 10px; border-radius:999px; background:var(--accent-soft); color:var(--accent-strong); font-size:10px; font-weight:750; }
-.case-card h3 { margin:25px 0 23px; color:var(--navy); font-size:23px; line-height:1.4; font-weight:680; }
+.case-card h3 { margin:25px 0 23px; color:var(--navy); font-family:"PingFang SC","HarmonyOS Sans SC","Source Han Sans SC","Microsoft YaHei",sans-serif; font-size:24px; line-height:1.35; font-weight:800; letter-spacing:.015em; }
+.case-card-featured h3 { font-size:clamp(27px,3.4cqi,32px); letter-spacing:.02em; text-shadow:0 1px 16px rgba(0,0,0,.14); }
 .case-result { display:flex; flex-direction:column; gap:7px; padding-bottom:22px; border-bottom:1px solid var(--line); }
 .case-result-split { flex-direction:row; align-items:flex-end; justify-content:space-between; gap:18px; }
 .case-primary-result { min-width:0; display:flex; flex-direction:column; gap:7px; }
