@@ -50,7 +50,7 @@ export const cases = [
   {
     slug: "feisuan-javaai",
     client: "飞算 JavaAI",
-    tag: "飞算 JavaAI 项目",
+    tag: "大型博主矩阵",
     result: "350 位",
     resultLabel: "万粉博主参与",
     featured: true,
@@ -63,7 +63,7 @@ export const cases = [
   {
     slug: "todesk-distribution",
     client: "ToDesk 长期代发",
-    tag: "ToDesk 长期代发项目",
+    tag: "长期矩阵运营",
     result: "500 篇",
     resultLabel: "累计发布内容",
     secondaryResult: "100W+",
@@ -74,7 +74,7 @@ export const cases = [
   {
     slug: "todesk-ai",
     client: "ToDesk AI",
-    tag: "ToDesk AI 项目",
+    tag: "原创内容推广",
     result: "50+ 篇",
     resultLabel: "原创技术内容",
     secondaryResult: "多次",
@@ -85,7 +85,7 @@ export const cases = [
   {
     slug: "xingkong-network",
     client: "星空组网",
-    tag: "星空组网项目",
+    tag: "公众号内容增长",
     result: "1000+",
     resultLabel: "公众号平均阅读量",
     summary: "围绕无公网 IP 远程访问、NAS 异地连接、企业多门店互通和跨平台设备组网等真实需求，组织技术博主开展连续内容传播。项目以可复现的使用场景建立产品认知，公众号平均阅读量达到 1000+，持续带动平台用户稳定增长。",
@@ -94,7 +94,7 @@ export const cases = [
   {
     slug: "huawei-kunpeng-ascend",
     client: "华为昇腾及鲲鹏",
-    tag: "华为昇腾及鲲鹏项目",
+    tag: "国产算力生态",
     result: "300+",
     resultLabel: "技术文章产出",
     secondaryResult: "1000W+",
@@ -109,7 +109,7 @@ export const cases = [
   {
     slug: "github-promotion",
     client: "GitHub 开源项目推广",
-    tag: "GitHub 开源项目推广",
+    tag: "开发者生态增长",
     result: "10W+",
     resultLabel: "单篇内容曝光",
     featured: true,
@@ -122,7 +122,7 @@ export const cases = [
   {
     slug: "360-ai",
     client: "CSDN × 360 AI",
-    tag: "360 AI 推广项目",
+    tag: "AI 技术推广",
     result: "30+ 位",
     resultLabel: "技术博主参与",
     summary: "围绕 GUI Agent、多模态大模型、智能办公与行业趋势，以多元内容视角形成集中传播矩阵。",
@@ -131,7 +131,7 @@ export const cases = [
   {
     slug: "chengjubao-csdn-kol",
     client: "程聚宝 CSDN KOL 投放计划",
-    tag: "程聚宝 CSDN KOL 投放计划",
+    tag: "开发者增长投放",
     result: "2W+",
     resultLabel: "平均单篇阅读量",
     summary: "以 CSDN 垂直技术 KOL 为核心，联动知乎、掘金、公众号等开发者内容阵地，构建从技术信任背书、搜索结果占位到平台注册转化的增长闭环。项目平均单篇阅读量达到 2W+，推动平台日增长 1000+ 用户。",
@@ -140,7 +140,7 @@ export const cases = [
   {
     slug: "dataify",
     client: "Dataify",
-    tag: "Dataify 推广项目",
+    tag: "数据服务推广",
     result: "50+ 位",
     resultLabel: "技术博主参与",
     summary: "围绕数据服务、API 教程、AI 训练数据与开发者实践组织原创推广，目前仍保持持续合作。",
