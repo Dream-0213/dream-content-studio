@@ -157,3 +157,13 @@ test("GitHub 推广项目突出展示曝光与 Star 成果", async () => {
   const caseHtml = await caseResponse.text();
   assert.match(caseHtml, /助力项目累计收获近 20 万 Star/);
 });
+
+test("ToDesk AI 卡片展示全站热榜成果", async () => {
+  const homeResponse = await render();
+  const homeHtml = await homeResponse.text();
+  assert.match(homeHtml, /文章登顶全站热榜第一/);
+
+  const caseResponse = await render("/cases/todesk-ai");
+  assert.equal(caseResponse.status, 200);
+  assert.match(await caseResponse.text(), /多篇文章登顶全站热榜第一/);
+});
