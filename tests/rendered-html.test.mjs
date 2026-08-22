@@ -142,3 +142,18 @@ test("首页与案例详情展示新增阅读成果", async () => {
   assert.match(huaweiHtml, /篇均阅读量 2W\+/);
   assert.match(huaweiHtml, /项目总阅读量 1000W\+/);
 });
+
+test("GitHub 推广项目突出展示曝光与 Star 成果", async () => {
+  const homeResponse = await render();
+  const homeHtml = await homeResponse.text();
+  assert.match(homeHtml, /GitHub 开源项目推广/);
+  assert.match(homeHtml, /单篇内容曝光/);
+  assert.match(homeHtml, /10W\+/);
+  assert.match(homeHtml, /近20万/);
+  assert.match(homeHtml, /href="\/cases\/github-promotion"/);
+
+  const caseResponse = await render("/cases/github-promotion");
+  assert.equal(caseResponse.status, 200);
+  const caseHtml = await caseResponse.text();
+  assert.match(caseHtml, /助力项目累计收获近 20 万 Star/);
+});

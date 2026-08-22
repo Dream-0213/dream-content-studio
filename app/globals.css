@@ -123,7 +123,7 @@ nav a:not(.nav-cta):hover::after { right:0; }
 .case-card-highlight { min-width:0; align-self:stretch; padding:0 8px 0 clamp(24px,4cqi,38px); border-left:1px solid var(--line-dark); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
 .case-card-highlight>span { color:#8fd8f4; font-size:11px; font-weight:750; letter-spacing:.08em; }
 .case-card-highlight>strong { max-width:100%; margin:13px 0 15px; color:#fff; font-size:clamp(48px,7.4cqi,64px); line-height:.95; letter-spacing:-.035em; font-weight:740; font-variant-numeric:tabular-nums; white-space:nowrap; }
-.case-card-highlight>small { color:#b4c8d2; font-size:11px; line-height:1.75; }
+.case-card-highlight>small { color:#b4c8d2; font-size:11px; line-height:1.75; white-space:pre-line; }
 .pill { align-self:flex-start; padding:7px 10px; border-radius:999px; background:var(--accent-soft); color:var(--accent-strong); font-size:10px; font-weight:750; }
 .case-card h3 { margin:25px 0 23px; color:var(--navy); font-size:23px; line-height:1.4; font-weight:680; }
 .case-result { display:flex; flex-direction:column; gap:7px; padding-bottom:22px; border-bottom:1px solid var(--line); }

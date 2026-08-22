@@ -66,9 +66,7 @@ export function ServiceGrid({excludeSlug}: {excludeSlug?: string} = {}) {
 
 export function CaseGrid() {
   return <div className="case-grid">{cases.map((item) => {
-    const isFeisuan = item.slug === "feisuan-javaai";
-    const isHuawei = item.slug === "huawei-kunpeng-ascend";
-    const isFeatured = isFeisuan || isHuawei;
+    const isFeatured = Boolean(item.featured);
     const hasInlineSecondary = Boolean(item.secondaryResult && !isFeatured);
     return <Link href={`/cases/${item.slug}`} className={`case-card${isFeatured ? " case-card-featured" : ""}`} key={item.slug}>
       <div className="case-card-main">
@@ -86,10 +84,10 @@ export function CaseGrid() {
         </div>
         <p>{item.summary}</p>
       </div>
-      {isFeatured && <div className="case-card-highlight" aria-label={isFeisuan ? "项目总阅读量达200万以上" : "项目总阅读量达1000万以上，篇均阅读量达2万以上"}>
-        <span>项目总阅读量</span>
-        <strong>{isFeisuan ? "200W+" : "1000W+"}</strong>
-        <small>{isFeisuan ? <>CSDN、知乎、公众号<br />多平台累计传播</> : <>篇均阅读量 2W+<br />国产算力生态内容传播</>}</small>
+      {isFeatured && <div className="case-card-highlight" aria-label={`${item.highlightLabel}${item.highlightResult}`}>
+        <span>{item.highlightLabel}</span>
+        <strong>{item.highlightResult}</strong>
+        <small>{item.highlightNote}</small>
       </div>}
       <span className="case-arrow" aria-hidden="true" />
     </Link>;
