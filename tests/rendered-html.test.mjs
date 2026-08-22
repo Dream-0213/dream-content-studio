@@ -161,9 +161,18 @@ test("GitHub 推广项目突出展示曝光与 Star 成果", async () => {
 test("ToDesk AI 卡片展示全站热榜成果", async () => {
   const homeResponse = await render();
   const homeHtml = await homeResponse.text();
+  assert.match(homeHtml, /ToDesk AI 项目/);
   assert.match(homeHtml, /文章登顶全站热榜第一/);
 
   const caseResponse = await render("/cases/todesk-ai");
   assert.equal(caseResponse.status, 200);
   assert.match(await caseResponse.text(), /多篇文章登顶全站热榜第一/);
+});
+
+test("案例卡片顶部展示具体项目名", async () => {
+  const response = await render();
+  const html = await response.text();
+  assert.match(html, /飞算 JavaAI 项目/);
+  assert.match(html, /华为昇腾及鲲鹏项目/);
+  assert.doesNotMatch(html, /大型博主矩阵/);
 });
