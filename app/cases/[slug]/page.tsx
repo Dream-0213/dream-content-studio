@@ -11,6 +11,7 @@ import { chengjubaoContents } from "../chengjubao-content";
 import { XingkongContentList } from "../XingkongContentList";
 import { xingkongContents } from "../xingkong-content";
 import { threeSixtyContents } from "../three-sixty-content";
+import { githubPromotionContents } from "../github-content";
 
 export function generateStaticParams() { return cases.map(({slug}) => ({slug})); }
 export async function generateMetadata({params}: {params:Promise<{slug:string}>}): Promise<Metadata> {
@@ -57,6 +58,18 @@ export default async function CasePage({params}: {params:Promise<{slug:string}>}
         </article>)}
       </div>
       <p className="creator-note">当前展示 19 条公开 CSDN 发布记录；未提供公开成稿链接的内容暂不展示。</p>
+    </section>}
+    {slug === "github-promotion" && <section className="section case-deliveries github-deliveries">
+      <div className="section-heading"><div><h2>公开发布<br/>内容案例</h2></div><p>技术博主围绕开源项目展开真实体验与技术解读，并同步分发至主流开发者社区，形成更广泛的搜索覆盖与持续曝光。</p></div>
+      <div className="delivery-proof" aria-label="GitHub 开源项目推广公开成果"><div><strong>10</strong><span>位技术博主</span></div><div><strong>30</strong><span>个公开发布链接</span></div><div><strong>10W+</strong><span>单篇内容曝光</span></div><div><strong>近20万</strong><span>项目累计 Star</span></div></div>
+      <div className="delivery-list github-delivery-list">
+        {githubPromotionContents.map((content,index)=><article className="delivery-item" key={`${content.name}-${content.date}`}>
+          <span className="delivery-index">{String(index+1).padStart(2,"0")}</span>
+          <div className="delivery-main"><div className="delivery-meta"><strong>{content.name}</strong><span>已发布</span><time>{content.date}</time></div></div>
+          <div className="delivery-links">{content.links.map(link=><a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label}</a>)}</div>
+        </article>)}
+      </div>
+      <p className="creator-note">本页展示当前整理的公开发布成果；外部平台内容可能因平台调整而发生变化。</p>
     </section>}
     <section className="section cases-section"><h2 className="compact-heading">更多合作案例</h2><CaseGrid /></section>
   </PageShell>;

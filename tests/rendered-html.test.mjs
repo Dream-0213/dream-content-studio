@@ -158,6 +158,18 @@ test("GitHub 推广项目突出展示曝光与 Star 成果", async () => {
   assert.match(caseHtml, /助力项目累计收获近 20 万 Star/);
 });
 
+test("GitHub 推广案例展示博主与多平台发布链接", async () => {
+  const response = await render("/cases/github-promotion");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /公开发布/);
+  assert.match(html, /心无旁骛～/);
+  assert.match(html, /是Dream呀/);
+  assert.match(html, /163815850/);
+  assert.match(html, /2072626761863533035/);
+  assert.match(html, /30.*个公开发布链接/s);
+});
+
 test("ToDesk AI 卡片展示全站热榜成果", async () => {
   const homeResponse = await render();
   const homeHtml = await homeResponse.text();
