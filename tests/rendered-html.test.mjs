@@ -83,6 +83,14 @@ test("博主矩阵保留两个名单入口和导出功能", async () => {
   assert.match(html, /开源中国/);
 });
 
+test("公众号矩阵包含墨鱼Dev且不重复", async () => {
+  const response = await render("/creators");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.equal((html.match(/<h3>墨鱼Dev<\/h3>/g) ?? []).length, 1);
+  assert.match(html, /oBISQyFgosCUWj-2jojiFQ/);
+});
+
 test("商务合作页保留微信联系与加入入口", async () => {
   const response = await render("/contact");
   assert.equal(response.status, 200);

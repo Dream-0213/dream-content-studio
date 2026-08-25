@@ -167,6 +167,7 @@ export const wechatCreators: WechatCreator[] = [
   {name:"智网研习社",followers:"5000+",wechat:"https://mp.weixin.qq.com/s/H3XXhmtHf1vOLeGPulY3UQ",category:"科技/数码"},
   {name:"落鱼科技",followers:"5000+",wechat:"https://mp.weixin.qq.com/s/KLQ1hHVKiCTcfkcRdD7yxw",category:"科技/数码"},
   {name:"欢喜长随关耳",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/Q2hBpvQYfgKucR3lOnxeTQ",category:"科技/数码"},
+  {name:"墨鱼Dev",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/oBISQyFgosCUWj-2jojiFQ",category:"科技/数码"},
   {name:"宝哥AGI",followers:"4000+",wechat:"https://mp.weixin.qq.com/s/ZP83oTSJLVMiQT7aiETNug",category:"AI/人工智能"},
   {name:"键舞风云",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/1RLDzlhk24CRygjrRyrPBg",category:"科技/数码"},
   {name:"木马人AI",followers:"3000+",wechat:"https://mp.weixin.qq.com/s/b0mnOO0PxgIzyLKNSW0opw",category:"科技/数码"},
