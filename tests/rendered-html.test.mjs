@@ -202,6 +202,20 @@ test("ToDesk AI 详情展示两篇热榜第一案例", async () => {
   assert.equal((html.match(/CSDN 全站综合热榜第 1/g) ?? []).length >= 2, true);
 });
 
+test("ToDesk AI 详情展示 7 月 50 篇多平台公开案例", async () => {
+  const response = await render("/cases/todesk-ai");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /7 月公开/);
+  assert.match(html, /50.*篇公开内容/s);
+  assert.match(html, /150.*个多平台链接/s);
+  assert.match(html, /2026 AI Agent横评：ToDesk AI凭什么打败codex和AutoClaw/);
+  assert.match(html, /手机远程控制电脑教程：ToDesk跨设备协同完全指南/);
+  assert.match(html, /162523850/);
+  assert.match(html, /163376600/);
+  assert.doesNotMatch(html, /feishu\.cn/);
+});
+
 test("星空组网案例不展示内部内容稿", async () => {
   const response = await render("/cases/xingkong-network");
   const html = await response.text();

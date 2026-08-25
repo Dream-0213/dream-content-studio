@@ -15,6 +15,7 @@ import { githubPromotionContents } from "../github-content";
 import { dataifyContents, dataifyKocContents } from "../dataify-content";
 import { DataifyKocContentList } from "../DataifyKocContentList";
 import { todeskAiContents } from "../todesk-ai-content";
+import { todeskAiJulyContents } from "../todesk-ai-july-content";
 
 export function generateStaticParams() { return cases.map(({slug}) => ({slug})); }
 export async function generateMetadata({params}: {params:Promise<{slug:string}>}): Promise<Metadata> {
@@ -100,6 +101,18 @@ export default async function CasePage({params}: {params:Promise<{slug:string}>}
         <figcaption><div><strong>{content.name}</strong><span>{content.achievement}</span></div><a href={content.url} target="_blank" rel="noreferrer">查看 CSDN 文章</a></figcaption>
       </figure>)}</div>
       <p className="creator-note">榜单成绩依据项目留存的 CSDN 排行榜记录；外部文章链接可能因平台调整而发生变化。</p>
+    </section>}
+    {slug === "todesk-ai" && <section className="section case-deliveries todesk-ai-july-deliveries">
+      <div className="section-heading"><div><h2>7 月公开<br/>内容成果</h2></div><p>围绕 AI Agent、远程办公、跨设备协同、安全与企业运维等真实需求，连续五周组织创作者完成内容测评与多平台分发。以下为本批可公开检索的发布记录。</p></div>
+      <div className="delivery-proof" aria-label="ToDesk AI 7 月公开内容成果"><div><strong>50</strong><span>篇公开内容</span></div><div><strong>5周</strong><span>连续内容发布</span></div><div><strong>150</strong><span>个多平台链接</span></div><div><strong>多场景</strong><span>覆盖用户决策链路</span></div></div>
+      <div className="delivery-list todesk-ai-july-list">
+        {todeskAiJulyContents.map((content,index)=><article className="delivery-item" key={`${content.name}-${content.links[0].url}`}>
+          <span className="delivery-index">{String(index+1).padStart(2,"0")}</span>
+          <div className="delivery-main"><div className="delivery-meta"><strong>{content.name}</strong><span>{content.week}</span></div><h3>{content.title}</h3></div>
+          <div className="delivery-links">{content.links.map(link=><a key={link.url} href={link.url} target="_blank" rel="noreferrer">{link.label}</a>)}</div>
+        </article>)}
+      </div>
+      <p className="creator-note">本页仅展示公开发布链接，不包含内部内容稿；外部平台内容可能因平台调整而发生变化。</p>
     </section>}
     <section className="section cases-section"><h2 className="compact-heading">更多合作案例</h2><CaseGrid /></section>
   </PageShell>;
