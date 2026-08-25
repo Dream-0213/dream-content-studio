@@ -38,7 +38,7 @@ export function FeisuanContentList({contents}: {contents: FeisuanContent[]}) {
       {visible.map((item, index) => <article className="delivery-item" key={`${item.name}-${item.title}`}>
         <span className="delivery-index">{String(index + 1).padStart(2,"0")}</span>
         <div className="delivery-main">
-          <div className="delivery-meta"><strong>{item.name}</strong>{item.date && <time>{item.date}</time>}</div>
+          <div className="delivery-meta"><strong>{item.name}</strong>{item.tier && <span>{`${item.tier}博主`}</span>}{item.date && <time>{item.date}</time>}</div>
           <h3>{item.title}</h3>
         </div>
         <div className="delivery-links">

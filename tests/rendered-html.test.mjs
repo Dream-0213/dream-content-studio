@@ -133,6 +133,21 @@ test("飞算 JavaAI 案例展示总阅读量", async () => {
   assert.match(html, /350/);
 });
 
+test("飞算 JavaAI 案例合并新增 50 篇公开内容", async () => {
+  const response = await render("/cases/feisuan-javaai");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /200.*篇公开内容/s);
+  assert.match(html, /600.*个多平台发布链接/s);
+  assert.match(html, /飞算JavaAI计费精度比Kimi-K2强吗/);
+  assert.match(html, /飞算JavaAI能搞定带7种状态和9层校验的用电调度系统吗/);
+  assert.match(html, /163844428/);
+  assert.match(html, /163917901/);
+  assert.match(html, /万粉博主/);
+  assert.match(html, /千粉博主/);
+  assert.match(html, /百粉博主/);
+});
+
 test("首页与案例详情展示新增阅读成果", async () => {
   const homeResponse = await render();
   const homeHtml = await homeResponse.text();

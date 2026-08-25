@@ -2,6 +2,7 @@ export type FeisuanContent = {
   name: string;
   title: string;
   date: string;
+  tier?: string;
   links: string[];
 };
 
@@ -1505,6 +1506,555 @@ export const feisuanContents: FeisuanContent[] = [
       "https://ifclub.com.cn/details/2078098284877115394",
       "https://zhuanlan.zhihu.com/p/2061552485517496519"
     ]
+  },
+  {
+    "name": "码龙",
+    "title": "飞算JavaAI计费精度比Kimi-K2强吗？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/baronbool/article/details/163844428?sharetype=blogdetail&sharerId=163844428&sharerefer=PC&sharesource=baronbool&spm=1011.2480.3001.8118",
+      "https://www.modelscope.cn/learn/435825",
+      "https://ifclub.com.cn/details/2089532188313972738"
+    ]
+  },
+  {
+    "name": "大山哥AGI",
+    "title": "飞算JavaAI能守住CRM数据质量吗？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/cannonmonster01/article/details/163844519?sharetype=blogdetail&sharerId=163844519&sharerefer=PC&sharesource=cannonmonster01&spm=1011.2480.3001.8118",
+      "https://developer.volcengine.com/articles/7675177158167232548",
+      "https://learnku.com/articles/93586"
+    ]
+  },
+  {
+    "name": "Token_w",
+    "title": "高并发秒杀：飞算JavaAI vs DeepSeek-V3谁更稳？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://wenyiguo.blog.csdn.net/article/details/163844247?spm=1011.2415.3001.5331",
+      "https://www.cnblogs.com/wen0-123/articles/22537116",
+      "https://zhuanlan.zhihu.com/p/2072983399720031528"
+    ]
+  },
+  {
+    "name": "倔强的石头_",
+    "title": "飞算JavaAI能防住API Key泄露吗？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/2302_78391795/article/details/163844214",
+      "https://juejin.cn/post/7674904411374747686",
+      "https://xie.infoq.cn/article/aec5b2089abaf19be69b1773c"
+    ]
+  },
+  {
+    "name": "一只牛博",
+    "title": "飞算JavaAI的多租户权限隔离实测",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/Mrxiao_bo/article/details/163843863",
+      "https://xie.infoq.cn/article/6415d58b74a0c2f2887a3581e",
+      "https://ifclub.com.cn/details/2089532371546337281"
+    ]
+  },
+  {
+    "name": "hhzz",
+    "title": "一小时能用飞算JavaAI搭完访客预约系统吗？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://tigerhhzz.blog.csdn.net/article/details/163844030",
+      "https://zhuanlan.zhihu.com/p/2073085895767503269",
+      "https://weibo.com/ttarticle/p/show?id=2309405333306375012471"
+    ]
+  },
+  {
+    "name": "Halcyon.平安",
+    "title": "30分钟能用飞算JavaAI跑通JWT认证吗？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://dahao-cpp.blog.csdn.net/article/details/163875680?spm=1011.2415.3001.10575&sharefrom=mp_manage_link",
+      "https://ifclub.com.cn/details/2089888631659622401",
+      "https://xie.infoq.cn/article/965d9bc735c2ac488f3075af1"
+    ]
+  },
+  {
+    "name": "扑克中的黑桃A",
+    "title": "我用专家模型录下了飞算JavaAI写代码的每一分钟：48分钟做完一个Java全栈项目",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://ace-s.blog.csdn.net/article/details/163855429",
+      "https://zhuanlan.zhihu.com/p/2073057788222357883",
+      "https://cloud.tencent.com/developer/article/2728186"
+    ]
+  },
+  {
+    "name": "小博测试成长之路",
+    "title": "55分钟用飞算JavaAI从零搭一个带JWT认证的REST API，能完成到什么程度？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/liboshi123/article/details/163844152",
+      "https://zhuanlan.zhihu.com/p/2072982510707930588",
+      "https://mp.weixin.qq.com/s/zboC7Mr0NDYAL5FXYrfWgg"
+    ]
+  },
+  {
+    "name": "牛哥带你学代码",
+    "title": "我记录了用飞算JavaAI写完整Java全栈项目的全过程——提速体感到底是不是玄学？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/weixin_60535956/article/details/163846739?",
+      "https://ifclub.com.cn/details/2089541420065157121",
+      "https://zhuanlan.zhihu.com/p/2072996014395494618"
+    ]
+  },
+  {
+    "name": "计算机魔术师",
+    "title": "飞算JavaAI能搞定物流系统三道难题吗？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/weixin_66526635/article/details/163864260",
+      "https://xie.infoq.cn/article/148a08cfee24bbbba2b221add",
+      "https://juejin.cn/spost/7675200722894127110"
+    ]
+  },
+  {
+    "name": "可涵不会debug",
+    "title": "飞算JavaAI能处理医疗样本全流程吗？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/hanwangyyds/article/details/163843841?spm=1001.2014.3001.5501",
+      "https://zhuanlan.zhihu.com/p/2072980231389029838",
+      "https://mp.weixin.qq.com/s/PRsRIx4UjLTdV_srOxadCw"
+    ]
+  },
+  {
+    "name": "fo安方",
+    "title": "飞算JavaAI能在5分钟内生成智能停车系统后端吗？我逐秒记录了全过程",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/stqer/article/details/163849322",
+      "https://zhuanlan.zhihu.com/p/2073046055235620931",
+      "https://mp.weixin.qq.com/s/a8CCKw8vzT5sINAi8GcpFA"
+    ]
+  },
+  {
+    "name": "云边有个稻草人",
+    "title": "飞算JavaAI能处理SaaS套餐变更业务吗？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://scarecrow.blog.csdn.net/article/details/163862167?spm=1001.2014.3001.5502",
+      "https://ifclub.com.cn/details/2089671518953074689",
+      "https://zhuanlan.zhihu.com/p/2073125262812828463"
+    ]
+  },
+  {
+    "name": "正在走向自律",
+    "title": "飞算JavaAI能搞定充电站故障处置吗？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/beautifulmemory/article/details/163844602",
+      "https://zhuanlan.zhihu.com/p/2072988623549605385",
+      "https://mp.weixin.qq.com/s/Wh1U5-0gG3vKl0wLcwwJfg"
+    ]
+  },
+  {
+    "name": "程序山海",
+    "title": "飞算JavaAI能搞定企业API密钥生命周期管理吗？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://bigstar.blog.csdn.net/article/details/163844373",
+      "https://zhuanlan.zhihu.com/p/2072983979553300593",
+      "https://ifclub.com.cn/details/2089530305314746369"
+    ]
+  },
+  {
+    "name": "硬核技术工作室",
+    "title": "飞算JavaAI能听懂食品安全召回系统的复杂业务吗？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/qq_46092061/article/details/163844123",
+      "https://zhuanlan.zhihu.com/p/2072983245617107170",
+      "https://ifclub.com.cn/details/2089531471914266625"
+    ]
+  },
+  {
+    "name": "是Dream呀",
+    "title": "飞算JavaAI能搞定带7种状态和9层校验的用电调度系统吗？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/weixin_51390582/article/details/163843746?spm=1001.2014.3001.5501",
+      "https://zhuanlan.zhihu.com/p/2072980269162828286",
+      "https://ifclub.com.cn/details/2089527409537904641"
+    ]
+  },
+  {
+    "name": "s_little_monster",
+    "title": "飞算JavaAI 3.9.9比旧版本快多少？图书借阅服务实测对比",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/s_little_monster/article/details/163907239?spm=1001.2014.3001.5501",
+      "https://juejin.cn/spost/7675613857709719590",
+      "https://zhuanlan.zhihu.com/p/2073709223658132197"
+    ]
+  },
+  {
+    "name": "YueJob.AI",
+    "title": "文件传到 99% 断了，能不能安全续传？我用飞算 JavaAI 跑了一次上传链路",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/qq_35160742/article/details/163918925?sharetype=blogdetail&sharerId=163918925&sharerefer=PC&sharesource=qq_35160742&spm=1011.2480.3001.8118",
+      "https://segmentfault.com/a/1190000048030666",
+      "https://zhuanlan.zhihu.com/p/2073796594894370660"
+    ]
+  },
+  {
+    "name": "松林AI说",
+    "title": "飞算JavaAI能从零搭建优惠券引擎吗？库存和核销怎么处理？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/cannonjinx/article/details/163873926",
+      "https://modelscope.cn/learn/435845",
+      "https://www.toutiao.com/article/7675545664733938195/"
+    ]
+  },
+  {
+    "name": "钟哩哩",
+    "title": "一条迟到回调，为什么能改乱运单？飞算 JavaAI 与 DeepSeek-V3 的状态机测试",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/jiang_style/article/details/163873987",
+      "https://ifclub.com.cn/details/2089886193829474306",
+      "https://developer.volcengine.com/articles/7675522719316312105"
+    ]
+  },
+  {
+    "name": "苏沁宁",
+    "title": "一张已关闭工单还能不能被推进？我用飞算 JavaAI 从这个漏洞开始重构售后工单",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/2609_95049439/article/details/163874007",
+      "https://zhuanlan.zhihu.com/p/2073341013746308711",
+      "https://segmentfault.com/a/1190000048176676"
+    ]
+  },
+  {
+    "name": "程序员鸭梨",
+    "title": "同一个优惠券并发需求，我分别丢给飞算Java专家模型和DeepSeek-V4-Flash：都能编译，工程细节差在哪？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/alex_goden/article/details/163874042",
+      "https://ifclub.com.cn/details/2089891108521963521",
+      "https://developer.volcengine.com/articles/7675549232148807699"
+    ]
+  },
+  {
+    "name": "牧马人王木木",
+    "title": "Java专有模型 vs GLM-5.2：都是AI写代码，凭什么“专家模型”敢跟通用“大模型”叫板？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/lady_mumu/article/details/163874162",
+      "https://modelscope.cn/learn/435846",
+      "https://www.toutiao.com/article/7675553200241525300/"
+    ]
+  },
+  {
+    "name": "Leo小李",
+    "title": "同一个百万级Excel导入需求，我分别丢给飞算Java专家模型和Kimi-K3：9分钟 vs 15分钟，代码差在哪？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/leopold_man/article/details/163874235",
+      "https://zhuanlan.zhihu.com/p/2073345509536818574",
+      "https://segmentfault.com/a/1190000048176754"
+    ]
+  },
+  {
+    "name": "程序员小一",
+    "title": "MiniMax-M3写了11分钟，飞算JavaAI只用8分钟：这次审批流实测，让我看见了通用大模型的工程盲区",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/guoyizhongxing/article/details/163874324",
+      "https://ifclub.com.cn/details/2089895166943096833",
+      "https://developer.volcengine.com/articles/7675556165920981042"
+    ]
+  },
+  {
+    "name": "第一程序员",
+    "title": "Deepseek-V4-Pro写了15分钟，飞算JavaAI只用6分钟：同一个多租户Java需求，差距藏在拦截器顺序里",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/no1coder/article/details/163874385",
+      "https://www.modelscope.cn/learn/435847",
+      "https://www.toutiao.com/article/7675557165796475426/"
+    ]
+  },
+  {
+    "name": "慢慢喜欢你",
+    "title": "Java专有模型 vs DeepSeek-V3：都是AI写代码，凭什么\"小模型\"敢跟大模型叫板？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/weixin_49475940/article/details/163874573",
+      "https://zhuanlan.zhihu.com/p/2073350932398616939",
+      "https://segmentfault.com/a/1190000048176889"
+    ]
+  },
+  {
+    "name": "Dicky张",
+    "title": "同一个Java需求分别丢给飞算JavaAI和DeepSeek-V3，生成的代码差距有多大？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/dicky_zhang3/article/details/163874679",
+      "https://zhuanlan.zhihu.com/p/2073353864447897950",
+      "https://www.toutiao.com/article/7675561883272872489"
+    ]
+  },
+  {
+    "name": "Richown",
+    "title": "飞算JavaAI和DeepSeek-V3写同一个政务系统，代码差距藏在哪？不在功能在细节",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/qq_40635035/article/details/163874759",
+      "https://developer.volcengine.com/articles/7675558517847097398",
+      "https://ifclub.com.cn/details/2089901111987335169"
+    ]
+  },
+  {
+    "name": "万里候",
+    "title": "飞算JavaAI和DeepSeek-V3写车联网OTA系统，差距有多大？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/qwe0iop0/article/details/163874857",
+      "https://www.modelscope.cn/learn/435848",
+      "https://segmentfault.com/a/1190000048176964"
+    ]
+  },
+  {
+    "name": "心无旁骛",
+    "title": "飞算JavaAI和DeepSeek-V3写云资源变更系统，硬编码和配置化差在哪？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/m0_63007797/article/details/163844053",
+      "https://mp.weixin.qq.com/s?__biz=MzkzMzUxMzc4MA==&tempkey=MTM4N19aS2sxM29pK1ZVVFplbkMrNW5ITHRodk56WDg3QlpzUHRCQlRuUGtoVDRLX0s3dTVuX3pxVDFlNDZfekpTaFR0eGxYQ0xZYUFxYTVlWGJNTUMtNWhaSmUyd0d1OUpLSmlYWE40M2o2Qi1NZ1FQLVJZejJUTVRCbHJlWlY2QU15U2lKLUhjbVNLaEVRYVloQ2R3eUtxRGo1TnZmTFZUY0lUUDVodE5Rfn4%3D&chksm=c24a1e93f53d9785b8d207d42b91a286db89cc3b6911d5f08bafa6bc38474be93726c4cc7598&token=2033928732&lang=zh_CN#rd",
+      "https://juejin.cn/spost/7675272903249084435"
+    ]
+  },
+  {
+    "name": "南屹川",
+    "title": "10万行导入断在第99999行，飞算JavaAI和DeepSeek-V3谁能续跑？",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://blog.csdn.net/weixin_43272162/article/details/163880227",
+      "https://blog.51cto.com/u_17752256/14860981",
+      "https://developer.volcengine.com/articles/7675568278019145769"
+    ]
+  },
+  {
+    "name": "承渊政道",
+    "title": "10:30 提交预约会不会撞上 10:00 的会议？我用飞算 JavaAI 3.9.1 和 3.9.9 跑了四个时间段",
+    "date": "",
+    "tier": "万粉",
+    "links": [
+      "https://lichengzheng.blog.csdn.net/article/details/163848190?spm=1001.2014.3001.5502",
+      "https://zhuanlan.zhihu.com/p/2073719151470850639",
+      "https://mp.weixin.qq.com/s/abYOuQU_2JgdkFFP762zLA"
+    ]
+  },
+  {
+    "name": "星辰邢哥",
+    "title": "CPU 抖两分钟就报警？飞算 JavaAI 与 GLM-4 的告警规则复盘",
+    "date": "",
+    "tier": "千粉",
+    "links": [
+      "https://blog.csdn.net/2301_76297596/article/details/163906117?spm=1001.2014.3001.5501",
+      "https://zhuanlan.zhihu.com/p/2073700673808552494",
+      "https://blog.51cto.com/u_17700160/14871403"
+    ]
+  },
+  {
+    "name": "byte轻骑兵小跟班",
+    "title": "飞算JavaAI能从零搭建差旅报销审批台吗？金额驱动审批链怎么处理？",
+    "date": "",
+    "tier": "千粉",
+    "links": [
+      "https://blog.csdn.net/2401_87042472/article/details/163906173?spm=1001.2014.3001.5502",
+      "https://zhuanlan.zhihu.com/p/2073701414275236334",
+      "https://mp.weixin.qq.com/s/8tRxmEI2pD0rYkulUTzntA"
+    ]
+  },
+  {
+    "name": "TechWJ",
+    "title": "飞算JavaAI能读懂跨境电商订单链路吗？库存、支付回调和取消补偿怎么处理？",
+    "date": "",
+    "tier": "千粉",
+    "links": [
+      "https://blog.csdn.net/m0_68390957/article/details/163917961",
+      "https://ifclub.com.cn/details/2090324421350977537",
+      "https://zhuanlan.zhihu.com/p/2073778545726431722"
+    ]
+  },
+  {
+    "name": "星辰AI",
+    "title": "一分钱多一道审批：我用 SealFlow 实测飞算 JavaAI 能否读懂权限链与状态机",
+    "date": "",
+    "tier": "千粉",
+    "links": [
+      "https://blog.csdn.net/qq_34803115/article/details/163881083",
+      "https://www.modelscope.cn/learn/435849",
+      "https://ifclub.com.cn/details/2089910703643357186"
+    ]
+  },
+  {
+    "name": "钮钴禄爱因斯晨",
+    "title": "别再让 AI 只写 CRUD 了：我用一个真实订单系统，实测飞算 JavaAI 能不能读懂复杂业务",
+    "date": "",
+    "tier": "千粉",
+    "links": [
+      "https://blog.csdn.net/2401_87533975/article/details/163919790?sharetype=blogdetail&sharerId=163919790&sharerefer=PC&sharesource=2401_87533975&spm=1011.2480.3001.8118",
+      "https://zhuanlan.zhihu.com/p/2073788013969150390",
+      "https://mp.weixin.qq.com/s/s5ZyYO4b1KYebMRbnEaRFw"
+    ]
+  },
+  {
+    "name": "键盘敲碎了雾霾",
+    "title": "别再让它只写 CRUD 了：我拿一套实验室预约系统，实测飞算JavaAI能不能读懂权限、状态机与并发冲突",
+    "date": "",
+    "tier": "千粉",
+    "links": [
+      "https://blog.csdn.net/2401_89538720/article/details/163917987?spm=1011.2415.3001.10575&sharefrom=mp_manage_link",
+      "https://mp.weixin.qq.com/s/QUSawG3UaqGp7D5OUhwY5A",
+      "https://zhuanlan.zhihu.com/p/2073785448065930728"
+    ]
+  },
+  {
+    "name": "小冷coding",
+    "title": "1000.00 元和 1000.01 元走两条审批路：我用 ExpenseFlow 实测飞算 JavaAI 的复杂业务理解力",
+    "date": "",
+    "tier": "千粉",
+    "links": [
+      "https://blog.csdn.net/leng_yong/article/details/163906882",
+      "https://zhuanlan.zhihu.com/p/2073705697318121858",
+      "https://baijiahao.baidu.com/s?id=1874004517479266112"
+    ]
+  },
+  {
+    "name": "七月",
+    "title": "从权限校验到发布回滚：我用 ReleaseGuard 实测飞算 JavaAI 能不能读懂复杂业务逻辑",
+    "date": "",
+    "tier": "千粉",
+    "links": [
+      "https://blog.csdn.net/2501_91062530/article/details/163920502?spm=1001.2014.3001.5502",
+      "https://ifclub.com.cn/details/2090346829881470977",
+      "https://zhuanlan.zhihu.com/p/2073800524911087818"
+    ]
+  },
+  {
+    "name": "听汐",
+    "title": "飞算JavaAI深度实测：当AI遇到考勤系统的\"暗礁\"，它真的能理解业务吗？",
+    "date": "",
+    "tier": "千粉",
+    "links": [
+      "https://blog.csdn.net/weixin_63764436/article/details/163919159?sharetype=blogdetail&sharerId=163919159&sharerefer=PC&sharesource=weixin_63764436&spm=1011.2480.3001.8118",
+      "https://modelscope.cn/learn/435874",
+      "https://developer.volcengine.com/user/4316018944517113/articles"
+    ]
+  },
+  {
+    "name": "蓝洋洋不蓝",
+    "title": "订单履约系统需要跨服务事务和状态机，飞算JavaAI能撑住这种复杂度吗？",
+    "date": "",
+    "tier": "千粉",
+    "links": [
+      "https://log05.blog.csdn.net/article/details/163909761?spm=1011.2415.3001.5331",
+      "https://mp.weixin.qq.com/s/9Y0mrOCSVZs_4gRo99mSyA",
+      "https://zhuanlan.zhihu.com/p/2073727965096167247"
+    ]
+  },
+  {
+    "name": "破局",
+    "title": "资金划拨系统的审批链和权限校验，飞算JavaAI能处理到什么程度？",
+    "date": "",
+    "tier": "百粉",
+    "links": [
+      "https://blog.csdn.net/stubborn_stone_/article/details/163912299?spm=1001.2014.3001.5502",
+      "https://zhuanlan.zhihu.com/p/2073728079374070466",
+      "https://xie.infoq.cn/article/8ed020bdda8ae6e31f14d94a8"
+    ]
+  },
+  {
+    "name": "未来可期叶",
+    "title": "飞算JavaAI能听懂保险理赔审核系统的复杂业务逻辑吗？全流程压测",
+    "date": "",
+    "tier": "百粉",
+    "links": [
+      "https://blog.csdn.net/yeyzhappy/article/details/163907267?spm=1011.2415.3001.5331",
+      "https://zhuanlan.zhihu.com/p/2073707590886875241",
+      "https://baijiahao.baidu.com/s?id=1874004993665791547"
+    ]
+  },
+  {
+    "name": "阿雷",
+    "title": "抢座、退票、补偿重试——飞算JavaAI生成的航空订票代码，能直接用吗？",
+    "date": "",
+    "tier": "百粉",
+    "links": [
+      "https://blog.csdn.net/iymei4986533030/article/details/163919081?sharetype=blogdetail&sharerId=163919081&sharerefer=PC&sharesource=iymei4986533030&spm=1011.2480.3001.8118",
+      "https://ifclub.com.cn/details/2090344284450648066",
+      "https://www.toutiao.com/article/7676016693554053651"
+    ]
+  },
+  {
+    "name": "逐步走向自律",
+    "title": "同样的订单状态机需求丢给飞算 JavaAI，它真的读懂复杂业务了吗？",
+    "date": "",
+    "tier": "百粉",
+    "links": [
+      "https://blog.csdn.net/2501_90658214/article/details/163905287",
+      "https://zhuanlan.zhihu.com/p/2073701607028610141",
+      "https://baijiahao.baidu.com/s?id=1874024894373208358"
+    ]
+  },
+  {
+    "name": "程序猿",
+    "title": "从权限校验到库存扣减：我用设备借用审批流，测出了飞算JavaAI 3.9.9 的真实水平",
+    "date": "",
+    "tier": "百粉",
+    "links": [
+      "https://blog.csdn.net/2401_85686768/article/details/163917901?spm=1011.2415.3001.10575&sharefrom=mp_manage_link",
+      "https://ifclub.com.cn/details/2090321955490295809",
+      "https://www.cnblogs.com/dahao105/articles/22591387"
+    ]
   }
 ];
-

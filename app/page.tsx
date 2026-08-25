@@ -37,7 +37,7 @@ export default function Home() {
       <PlatformStrip />
 
       <section className="result-ribbon" aria-label="代表性推广成果">
-        <Link href="/cases/feisuan-javaai"><span>飞算 JavaAI</span><strong>350 位</strong><small>万粉博主参与</small></Link>
+        <Link href="/cases/feisuan-javaai"><span>飞算 JavaAI</span><strong>350 位</strong><small>技术博主参与</small></Link>
         <Link href="/cases/huawei-kunpeng-ascend"><span>华为昇腾及鲲鹏</span><strong>300+ 篇</strong><small>技术文章交付</small></Link>
         <Link href="/cases/todesk-distribution"><span>ToDesk</span><strong>500 篇</strong><small>长期矩阵发布</small></Link>
         <Link href="/creators"><span>创作者矩阵</span><strong>700+</strong><small>内容分发博主</small></Link>
