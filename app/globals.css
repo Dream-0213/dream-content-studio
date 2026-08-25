@@ -291,6 +291,16 @@ footer { padding:72px var(--page-x) 28px; background:#051722; color:#fff; }
 .creator-expand-button,.wechat-expand-button { min-width:280px; min-height:48px; padding:0 20px; border:1px solid var(--navy); border-radius:10px; background:transparent; color:var(--navy); font-size:12px; font-weight:750; cursor:pointer; transition:background .18s ease-out,color .18s ease-out; }
 .creator-expand-button:hover,.wechat-expand-button:hover { background:var(--navy); color:#fff; }
 .creator-note { max-width:76ch; margin:22px 0 0; color:var(--muted); font-size:12px; line-height:1.75; }
+.todesk-proof-gallery { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+.todesk-proof-gallery figure { margin:0; overflow:hidden; border:1px solid var(--line); border-radius:var(--radius); background:var(--surface); box-shadow:0 16px 38px rgba(7,28,44,.08); }
+.todesk-proof-gallery figure>a { display:block; background:#eef3f6; }
+.todesk-proof-gallery img { width:100%; aspect-ratio:16/8.6; display:block; object-fit:cover; object-position:top center; transition:transform .2s ease-out; }
+.todesk-proof-gallery figure:hover img { transform:scale(1.012); }
+.todesk-proof-gallery figcaption { min-height:86px; padding:17px 19px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.todesk-proof-gallery figcaption div { display:flex; flex-direction:column; gap:5px; }
+.todesk-proof-gallery figcaption strong { color:var(--navy); font-size:15px; }
+.todesk-proof-gallery figcaption span { color:var(--accent-strong); font-size:11px; font-weight:750; }
+.todesk-proof-gallery figcaption>a { flex:0 0 auto; color:var(--accent-strong); font-size:12px; font-weight:750; }
 .wechat-category { color:var(--accent-strong); font-size:11px; font-weight:700; }
 .wechat-creator-card a { grid-column:2 / 4; align-self:end; padding-top:13px; border-top:1px solid var(--line); color:var(--accent-strong); font-size:12px; font-weight:700; }
 .creator-export-section { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:55px; align-items:center; background:var(--navy); color:#fff; }
@@ -331,6 +341,7 @@ footer { padding:72px var(--page-x) 28px; background:#051722; color:#fff; }
   .delivery-item { grid-template-columns:32px 1fr; }
   .delivery-links { grid-column:2; justify-content:flex-start; }
   .delivery-proof { grid-template-columns:repeat(2,1fr); }
+  .todesk-proof-gallery { grid-template-columns:1fr; }
 }
 
 @media (max-width:600px) {

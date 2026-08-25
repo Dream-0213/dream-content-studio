@@ -47,7 +47,7 @@ export default async function CasePage({params}: {params:Promise<{slug:string}>}
     </section>}
     {slug === "xingkong-network" && <section className="section case-deliveries xingkong-deliveries">
       <div className="section-heading"><div><h2>真实组网场景<br/>持续内容增长</h2></div><p>从个人 NAS、远程办公到企业多门店互通，以连续发布的实测内容覆盖不同使用场景，让产品能力更容易被理解、搜索和验证。</p></div>
-      <div className="delivery-proof" aria-label="星空组网推广成果数据"><div><strong>1000+</strong><span>公众号平均阅读量</span></div><div><strong>稳定增长</strong><span>平台用户表现</span></div><div><strong>11</strong><span>位技术博主</span></div><div><strong>44</strong><span>个内容及发布链接</span></div></div>
+      <div className="delivery-proof" aria-label="星空组网推广成果数据"><div><strong>1000+</strong><span>公众号平均阅读量</span></div><div><strong>稳定增长</strong><span>平台用户表现</span></div><div><strong>11</strong><span>位技术博主</span></div><div><strong>33</strong><span>个公开发布链接</span></div></div>
       <XingkongContentList contents={xingkongContents} />
       <p className="creator-note">文章标题、发布日期和链接来自项目交付记录；外部平台内容可能因平台调整而发生变化。</p>
     </section>}
@@ -95,11 +95,10 @@ export default async function CasePage({params}: {params:Promise<{slug:string}>}
     {slug === "todesk-ai" && <section className="section case-deliveries todesk-ai-deliveries">
       <div className="section-heading"><div><h2>全站热榜<br/>第一案例</h2></div><p>通过真实远程办公场景、产品体验和技术对比切入内容创作，让文章同时具备实用价值与传播力。当前展示的两篇公开案例均登顶 CSDN 全站综合热榜第一。</p></div>
       <div className="delivery-proof" aria-label="ToDesk AI 全站热榜成果"><div><strong>2</strong><span>篇公开案例</span></div><div><strong>2</strong><span>次全站热榜第一</span></div><div><strong>100%</strong><span>本批展示案例登顶</span></div><div><strong>50+</strong><span>篇原创技术内容</span></div></div>
-      <div className="delivery-list todesk-ai-delivery-list">{todeskAiContents.map((content,index)=><article className="delivery-item" key={content.url}>
-        <span className="delivery-index">{String(index+1).padStart(2,"0")}</span>
-        <div className="delivery-main"><div className="delivery-meta"><strong>{content.name}</strong><span>{content.achievement}</span></div></div>
-        <div className="delivery-links"><a href={content.url} target="_blank" rel="noreferrer">查看 CSDN 文章</a></div>
-      </article>)}</div>
+      <div className="todesk-proof-gallery">{todeskAiContents.map(content=><figure key={content.url}>
+        <a href={content.url} target="_blank" rel="noreferrer"><img src={content.image} alt={`${content.name}的 CSDN 全站综合热榜第一截图`} loading="lazy"/></a>
+        <figcaption><div><strong>{content.name}</strong><span>{content.achievement}</span></div><a href={content.url} target="_blank" rel="noreferrer">查看 CSDN 文章</a></figcaption>
+      </figure>)}</div>
       <p className="creator-note">榜单成绩依据项目留存的 CSDN 排行榜记录；外部文章链接可能因平台调整而发生变化。</p>
     </section>}
     <section className="section cases-section"><h2 className="compact-heading">更多合作案例</h2><CaseGrid /></section>

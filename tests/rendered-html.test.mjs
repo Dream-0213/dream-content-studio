@@ -197,7 +197,18 @@ test("ToDesk AI 详情展示两篇热榜第一案例", async () => {
   assert.match(html, /云边有个稻草人/);
   assert.match(html, /163734879/);
   assert.match(html, /163922162/);
+  assert.match(html, /todesk-ai-byteqqb-hotlist\.jpg/);
+  assert.match(html, /todesk-ai-scarecrow-hotlist\.jpg/);
   assert.equal((html.match(/CSDN 全站综合热榜第 1/g) ?? []).length >= 2, true);
+});
+
+test("星空组网案例不展示内部内容稿", async () => {
+  const response = await render("/cases/xingkong-network");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.doesNotMatch(html, /内容稿/);
+  assert.doesNotMatch(html, /feishu\.cn/);
+  assert.match(html, /查看|CSDN/);
 });
 
 test("Dataify 案例展示 KOL 文章与阅读成果", async () => {
