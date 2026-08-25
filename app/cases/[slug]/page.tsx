@@ -14,6 +14,7 @@ import { threeSixtyContents } from "../three-sixty-content";
 import { githubPromotionContents } from "../github-content";
 import { dataifyContents, dataifyKocContents } from "../dataify-content";
 import { DataifyKocContentList } from "../DataifyKocContentList";
+import { todeskAiContents } from "../todesk-ai-content";
 
 export function generateStaticParams() { return cases.map(({slug}) => ({slug})); }
 export async function generateMetadata({params}: {params:Promise<{slug:string}>}): Promise<Metadata> {
@@ -90,6 +91,16 @@ export default async function CasePage({params}: {params:Promise<{slug:string}>}
       <div className="delivery-proof" aria-label="Dataify KOC 合作成果"><div><strong>30</strong><span>位 KOC 创作者</span></div><div><strong>30</strong><span>篇原创内容</span></div><div><strong>90</strong><span>个多平台链接</span></div><div><strong>3个月</strong><span>持续内容发布</span></div></div>
       <DataifyKocContentList contents={dataifyKocContents}/>
       <p className="creator-note">文章标题、发布日期和链接来自项目交付记录；外部平台内容可能因平台调整而发生变化。</p>
+    </section>}
+    {slug === "todesk-ai" && <section className="section case-deliveries todesk-ai-deliveries">
+      <div className="section-heading"><div><h2>全站热榜<br/>第一案例</h2></div><p>通过真实远程办公场景、产品体验和技术对比切入内容创作，让文章同时具备实用价值与传播力。当前展示的两篇公开案例均登顶 CSDN 全站综合热榜第一。</p></div>
+      <div className="delivery-proof" aria-label="ToDesk AI 全站热榜成果"><div><strong>2</strong><span>篇公开案例</span></div><div><strong>2</strong><span>次全站热榜第一</span></div><div><strong>100%</strong><span>本批展示案例登顶</span></div><div><strong>50+</strong><span>篇原创技术内容</span></div></div>
+      <div className="delivery-list todesk-ai-delivery-list">{todeskAiContents.map((content,index)=><article className="delivery-item" key={content.url}>
+        <span className="delivery-index">{String(index+1).padStart(2,"0")}</span>
+        <div className="delivery-main"><div className="delivery-meta"><strong>{content.name}</strong><span>{content.achievement}</span></div></div>
+        <div className="delivery-links"><a href={content.url} target="_blank" rel="noreferrer">查看 CSDN 文章</a></div>
+      </article>)}</div>
+      <p className="creator-note">榜单成绩依据项目留存的 CSDN 排行榜记录；外部文章链接可能因平台调整而发生变化。</p>
     </section>}
     <section className="section cases-section"><h2 className="compact-heading">更多合作案例</h2><CaseGrid /></section>
   </PageShell>;

@@ -188,6 +188,18 @@ test("ToDesk AI 卡片展示全站热榜成果", async () => {
   assert.match(await caseResponse.text(), /多篇文章登顶全站热榜第一/);
 });
 
+test("ToDesk AI 详情展示两篇热榜第一案例", async () => {
+  const response = await render("/cases/todesk-ai");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /全站热榜.*第一案例/s);
+  assert.match(html, /byte轻骑兵/);
+  assert.match(html, /云边有个稻草人/);
+  assert.match(html, /163734879/);
+  assert.match(html, /163922162/);
+  assert.equal((html.match(/CSDN 全站综合热榜第 1/g) ?? []).length >= 2, true);
+});
+
 test("Dataify 案例展示 KOL 文章与阅读成果", async () => {
   const response = await render("/cases/dataify");
   const html = await response.text();
