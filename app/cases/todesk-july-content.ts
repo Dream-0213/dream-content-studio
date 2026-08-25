@@ -1,11 +1,11 @@
-export type ToDeskAiJulyContent = {
+export type ToDeskJulyContent = {
   week: string;
   title: string;
   name: string;
   links: { label: string; url: string }[];
 };
 
-export const todeskAiJulyContents: ToDeskAiJulyContent[] = [
+export const todeskJulyContents: ToDeskJulyContent[] = [
   {
     "week": "7月第1周",
     "title": "2026 AI Agent横评：ToDesk AI凭什么打败codex和AutoClaw",
@@ -957,4 +957,3 @@ export const todeskAiJulyContents: ToDeskAiJulyContent[] = [
     ]
   }
 ];
-

@@ -217,8 +217,8 @@ test("ToDesk AI 详情展示两篇热榜第一案例", async () => {
   assert.equal((html.match(/CSDN 全站综合热榜第 1/g) ?? []).length >= 2, true);
 });
 
-test("ToDesk AI 详情展示 7 月 50 篇多平台公开案例", async () => {
-  const response = await render("/cases/todesk-ai");
+test("ToDesk 长期代发详情展示 7 月 50 篇多平台公开案例", async () => {
+  const response = await render("/cases/todesk-distribution");
   const html = await response.text();
   assert.equal(response.status, 200);
   assert.match(html, /7 月公开/);
@@ -229,6 +229,11 @@ test("ToDesk AI 详情展示 7 月 50 篇多平台公开案例", async () => {
   assert.match(html, /162523850/);
   assert.match(html, /163376600/);
   assert.doesNotMatch(html, /feishu\.cn/);
+
+  const aiResponse = await render("/cases/todesk-ai");
+  const aiHtml = await aiResponse.text();
+  assert.doesNotMatch(aiHtml, /162523850/);
+  assert.doesNotMatch(aiHtml, /163376600/);
 });
 
 test("星空组网案例不展示内部内容稿", async () => {
