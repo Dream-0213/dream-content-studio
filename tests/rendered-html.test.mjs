@@ -199,3 +199,15 @@ test("Dataify 案例展示 KOL 文章与阅读成果", async () => {
   assert.match(html, /162095320/);
   assert.match(html, /162440870/);
 });
+
+test("Dataify 案例区分 KOL 与 KOC 合作成果", async () => {
+  const response = await render("/cases/dataify");
+  const html = await response.text();
+  assert.match(html, /KOL 高质量/);
+  assert.match(html, /KOC 持续/);
+  assert.match(html, /30.*位 KOC 创作者/s);
+  assert.match(html, /90.*个多平台链接/s);
+  assert.match(html, /做 AI 项目时，数据集质量往往比模型参数更先决定结果/);
+  assert.match(html, /一份周报反复延期后，我把竞品数据采集改成了自动化任务/);
+  assert.match(html, /163995396/);
+});

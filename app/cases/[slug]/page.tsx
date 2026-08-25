@@ -12,7 +12,8 @@ import { XingkongContentList } from "../XingkongContentList";
 import { xingkongContents } from "../xingkong-content";
 import { threeSixtyContents } from "../three-sixty-content";
 import { githubPromotionContents } from "../github-content";
-import { dataifyContents } from "../dataify-content";
+import { dataifyContents, dataifyKocContents } from "../dataify-content";
+import { DataifyKocContentList } from "../DataifyKocContentList";
 
 export function generateStaticParams() { return cases.map(({slug}) => ({slug})); }
 export async function generateMetadata({params}: {params:Promise<{slug:string}>}): Promise<Metadata> {
@@ -73,7 +74,7 @@ export default async function CasePage({params}: {params:Promise<{slug:string}>}
       <p className="creator-note">本页展示当前整理的公开发布成果；外部平台内容可能因平台调整而发生变化。</p>
     </section>}
     {slug === "dataify" && <section className="section case-deliveries dataify-deliveries">
-      <div className="section-heading"><div><h2>CSDN KOL<br/>公开内容成果</h2></div><p>围绕数据服务、API 与开发者实践，通过垂直技术 KOL 的真实内容建立产品认知，并在 CSDN 搜索与推荐场景中形成持续曝光。</p></div>
+      <div className="section-heading"><div><h2>KOL 高质量<br/>内容合作</h2></div><p>围绕数据服务、API 与开发者实践，通过垂直技术 KOL 的高质量内容建立产品认知，并在 CSDN 搜索与推荐场景中形成持续曝光。</p></div>
       <div className="delivery-proof" aria-label="Dataify 公开内容成果"><div><strong>70W+</strong><span>本批累计阅读量</span></div><div><strong>11</strong><span>篇公开文章</span></div><div><strong>5</strong><span>篇达到 10W 阅读</span></div><div><strong>50+</strong><span>位技术博主参与</span></div></div>
       <div className="delivery-list dataify-delivery-list">
         {dataifyContents.map((content,index)=><article className="delivery-item" key={`${content.name}-${content.url}`}>
@@ -83,6 +84,12 @@ export default async function CasePage({params}: {params:Promise<{slug:string}>}
         </article>)}
       </div>
       <p className="creator-note">阅读量依据本批项目记录整理；平台展示数据可能随时间继续增长。</p>
+    </section>}
+    {slug === "dataify" && <section className="section case-deliveries dataify-koc-deliveries">
+      <div className="section-heading"><div><h2>KOC 持续<br/>内容合作</h2></div><p>从 6 月到 8 月围绕数据集质量、采集流程、市场调研、竞品监测和代理服务等真实场景持续发布，以更丰富的创作者视角扩大产品内容覆盖。</p></div>
+      <div className="delivery-proof" aria-label="Dataify KOC 合作成果"><div><strong>30</strong><span>位 KOC 创作者</span></div><div><strong>30</strong><span>篇原创内容</span></div><div><strong>90</strong><span>个多平台链接</span></div><div><strong>3个月</strong><span>持续内容发布</span></div></div>
+      <DataifyKocContentList contents={dataifyKocContents}/>
+      <p className="creator-note">文章标题、发布日期和链接来自项目交付记录；外部平台内容可能因平台调整而发生变化。</p>
     </section>}
     <section className="section cases-section"><h2 className="compact-heading">更多合作案例</h2><CaseGrid /></section>
   </PageShell>;
