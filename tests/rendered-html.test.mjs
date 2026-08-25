@@ -187,3 +187,15 @@ test("ToDesk AI 卡片展示全站热榜成果", async () => {
   assert.equal(caseResponse.status, 200);
   assert.match(await caseResponse.text(), /多篇文章登顶全站热榜第一/);
 });
+
+test("Dataify 案例展示 KOL 文章与阅读成果", async () => {
+  const response = await render("/cases/dataify");
+  const html = await response.text();
+  assert.equal(response.status, 200);
+  assert.match(html, /70W\+/);
+  assert.match(html, /11.*篇公开文章/s);
+  assert.match(html, /是Dream呀/);
+  assert.match(html, /硬核技术工作室/);
+  assert.match(html, /162095320/);
+  assert.match(html, /162440870/);
+});
