@@ -131,6 +131,8 @@ test("首页与详情页展示头部公众号幕后内容共创案例", async ()
   assert.match(homeHtml, /百万 \/ 十万粉/);
   assert.match(homeHtml, /长期内容阅读量/);
   assert.match(homeHtml, /href="\/cases\/wechat-editorial-collaboration"/);
+  const caseGridHtml = homeHtml.slice(homeHtml.indexOf('<div class="case-grid">'));
+  assert.ok(caseGridHtml.indexOf('href="/cases/wechat-editorial-collaboration"') < caseGridHtml.indexOf('href="/cases/feisuan-javaai"'));
 
   const caseResponse = await render("/cases/wechat-editorial-collaboration");
   const caseHtml = await caseResponse.text();
