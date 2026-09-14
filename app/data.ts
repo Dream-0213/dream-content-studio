@@ -148,6 +148,19 @@ export const cases = [
     summary: "围绕数据服务、API 教程、AI 训练数据与开发者实践组织原创推广，形成 KOL 高质量内容与 KOC 持续传播的双层合作。当前 KOL 样本累计阅读量达到 70W+，并完成 30 篇 KOC 多平台内容交付。",
     metrics: ["50+ 位技术博主参与", "KOL 样本累计阅读 70W+", "5 篇内容阅读量达到 10W", "30 篇 KOC 内容多平台交付"],
   },
+  {
+    slug: "wechat-editorial-collaboration",
+    client: "头部公众号幕后内容共创",
+    tag: "公众号深度内容服务",
+    result: "百万 / 十万粉",
+    resultLabel: "公众号幕后写作经验",
+    featured: true,
+    highlightLabel: "长期内容阅读量",
+    highlightResult: "10W+",
+    highlightNote: "服务多个头部公众号\n稳定沉淀高阅读内容",
+    summary: "由服务多个百万粉、十万粉公众号的幕后写手参与，从选题判断、资料研究到成稿打磨，长期承担科技与互联网方向的深度内容创作。合作内容阅读量长期达到 10W+，兼顾专业表达、账号调性与真实阅读体验。",
+    metrics: ["服务百万粉与十万粉公众号", "长期内容阅读量 10W+", "覆盖选题、研究、撰写与精修", "适配不同公众号表达风格"],
+  },
 ];
 
 export const platforms = ["CSDN", "微信公众号", "知乎", "稀土掘金", "腾讯云", "华为云", "51CTO", "开源中国"];

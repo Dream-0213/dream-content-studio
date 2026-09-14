@@ -124,6 +124,22 @@ test("首页优先展示代表性大规模案例", async () => {
   assert.match(html, /1000W\+/);
 });
 
+test("首页与详情页展示头部公众号幕后内容共创案例", async () => {
+  const homeResponse = await render();
+  const homeHtml = await homeResponse.text();
+  assert.match(homeHtml, /头部公众号幕后内容共创/);
+  assert.match(homeHtml, /百万 \/ 十万粉/);
+  assert.match(homeHtml, /长期内容阅读量/);
+  assert.match(homeHtml, /href="\/cases\/wechat-editorial-collaboration"/);
+
+  const caseResponse = await render("/cases/wechat-editorial-collaboration");
+  const caseHtml = await caseResponse.text();
+  assert.equal(caseResponse.status, 200);
+  assert.match(caseHtml, /长期内容阅读量 10W\+/);
+  assert.match(caseHtml, /选题判断、资料研究到成稿打磨/);
+  assert.match(caseHtml, /适配不同公众号表达风格/);
+});
+
 test("飞算 JavaAI 案例展示总阅读量", async () => {
   const response = await render("/cases/feisuan-javaai");
   assert.equal(response.status, 200);
