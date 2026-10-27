@@ -150,6 +150,22 @@ export const creators: Creator[] = [
   {name:"Sunlightʊə",followers:"538",csdn:"https://blog.csdn.net/weixin_53212110"},
   {name:"世界因我而不同lx",followers:"1W+",csdn:"https://blog.csdn.net/lx08113"},
   {name:"小月亮",followers:"1W+",csdn:"https://blog.csdn.net/2501_92129429"},
+  {name:"扑克中的黑桃A",followers:"1W+",csdn:"https://blog.csdn.net/Pocker_Spades_A",juejin:"https://juejin.cn/user/1106580348609019",zhihu:"https://www.zhihu.com/people/52313-73-61/posts",wechat:"https://mp.weixin.qq.com/s/OiyF6QnTe_dXwXvwqHCGVA"},
+  {name:"华年的晚",followers:"10",csdn:"https://blog.csdn.net/2501_93145871?type=blog",juejin:"https://juejin.cn/user/5970114125580",zhihu:"https://www.zhihu.com/people/chi-ren-chang-wan-ge-47-40",wechat:"https://mp.weixin.qq.com/s/13hq5S0Ug0ewo3yYewVVxA"},
+  {name:"码银",followers:"2W",csdn:"https://blog.csdn.net/weixin_53197693",wechat:"https://mp.weixin.qq.com/s/EufGBeLvmmQUOllKFfys4Q"},
+  {name:"澪贰",followers:"1.2W+",csdn:"https://blog.csdn.net/Zero_VPN?type=blog",juejin:"https://juejin.cn/user/4273130296076410/posts",zhihu:"https://www.zhihu.com/people/asd-41-3/posts",wechat:"https://mp.weixin.qq.com/s/jM1lzDC_y-y4DAN0b2srYA"},
+  {name:"Richown",followers:"1W+",csdn:"https://blog.csdn.net/qq_40635035"},
+  {name:"万里候",followers:"1W+",csdn:"https://blog.csdn.net/qwe0iop0"},
+  {name:"南屹川",followers:"1W+",csdn:"https://blog.csdn.net/weixin_43272162"},
+  {name:"星辰AI",followers:"1W+",csdn:"https://blog.csdn.net/qq_34803115"},
+  {name:"阿雷的工作流",followers:"1W+",csdn:"https://blog.csdn.net/iymei4986533030"},
+  {name:"听汐",followers:"1W+",csdn:"https://blog.csdn.net/weixin_63764436"},
+  {name:"泠不丁",followers:"1W+",csdn:"https://blog.csdn.net/specter__"},
+  {name:"AI客栈",followers:"1W+",csdn:"https://blog.csdn.net/m0_50889382"},
+  {name:"AI智能体工作室",followers:"1W+",csdn:"https://blog.csdn.net/2611_95335967"},
+  {name:"醍醐实验室",followers:"1W+",csdn:"https://blog.csdn.net/2201_75984884"},
+  {name:"第六章初",followers:"500+",csdn:"https://blog.csdn.net/2402_89003542?spm=1000.2115.3001.5343"},
+  {name:"hay_lee",followers:"1000+",csdn:"https://blog.csdn.net/yztezhl?type=blog",wechat:"https://mp.weixin.qq.com/s/pyPoB4LpMtPhMF3NCCWadw"},
 ];
 
 export const wechatCreators: WechatCreator[] = [

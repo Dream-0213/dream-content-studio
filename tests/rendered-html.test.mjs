@@ -81,6 +81,13 @@ test("博主矩阵保留两个名单入口和导出功能", async () => {
   assert.match(html, /1\.2W\+/);
   assert.match(html, /百度星河/);
   assert.match(html, /开源中国/);
+  assert.match(html, /扑克中的黑桃A/);
+  assert.match(html, /Pocker_Spades_A/);
+  assert.match(html, /码银/);
+  assert.match(html, /澪贰/);
+  assert.match(html, /Richown/);
+  assert.match(html, /AI智能体工作室/);
+  assert.match(html, /hay_lee/);
 });
 
 test("公众号矩阵包含墨鱼Dev且不重复", async () => {
