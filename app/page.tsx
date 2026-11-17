@@ -1,11 +1,11 @@
 import { CaseGrid, Footer, Header, Link, PlatformStrip, ServiceGrid } from "./components";
 
 const faqs = [
-  ["Dream 内容推广工作室主要提供什么服务？", "提供技术内容策划与原创、CSDN KOL 投放、技术博主推广、公众号矩阵、多平台内容分发、大型征文招募和长期内容运营。"],
+  ["Dream 内容推广工作室主要提供什么服务？", "提供技术内容策划与原创、CSDN KOL 投放、技术博主推广、公众号矩阵、多平台内容分发、开发者活动招募、全平台粉丝增长和长期内容运营。"],
   ["适合哪些技术品牌合作？", "适合人工智能、AI Agent、开发工具、云计算、数据库、企业软件、数据服务和国产软硬件生态等需要触达开发者的品牌。"],
   ["可以只做 CSDN 或微信公众号推广吗？", "可以。既支持 CSDN、公众号等单平台投放，也可以组合知乎、掘金、华为云、腾讯云和 51CTO 等平台形成内容矩阵。"],
   ["如何选择合适的技术博主？", "品牌方可先查看博主主页、粉丝量和历史内容，再按产品方向、目标人群、预算及档期确定合作名单，由 Dream 工作室统一推进创作与交付。"],
-  ["如何加入 Dream 工作室？", "如果你是有影响力的博主、技术专家、内容作者，或拥有可合作的行业资源，可以前往联系页面添加微信，备注「申请加入 + 擅长方向 / 主要平台」。"],
+  ["如何加入 Dream 工作室？", "我们长期招募各平台博主、技术专家、内容作者和资源合作伙伴，为成员提供多种品牌合作机会与商业变现资源。可以前往联系页面添加微信，备注「申请加入 + 擅长方向 / 主要平台」。"],
 ] as const;
 
 export default function Home() {
@@ -75,13 +75,13 @@ export default function Home() {
       <section className="section home-section join-section" id="join">
         <div className="join-intro">
           <h2>招贤纳士，<br />欢迎加入我们</h2>
-          <p>如果你有可合作的行业资源，在某个领域拥有稳定影响力，或者擅长技术与内容创作，欢迎与 Dream 工作室建立连接，一起做有价值、能沉淀的内容。</p>
+          <p>我们长期招募各个平台的优质博主，也欢迎技术专家、内容作者与资源合作伙伴加入。工作室将根据方向与影响力匹配品牌推广、内容共创、活动参与等多种合作机会，并提供可持续的商业变现资源。</p>
           <Link href="/contact#join-application" className="button button-primary">申请加入</Link>
           <small>添加微信时请备注「申请加入 + 擅长方向 / 主要平台」</small>
         </div>
         <div className="join-grid">
           <article><span>01</span><h3>资源合作伙伴</h3><p>拥有品牌、渠道、社区、活动或开发者生态等合作资源。</p></article>
-          <article><span>02</span><h3>有影响力的博主</h3><p>活跃于 CSDN、公众号、知乎、掘金等平台，有稳定的内容输出与读者群体。</p></article>
+          <article><span>02</span><h3>全平台优质博主</h3><p>无论活跃于 CSDN、公众号、知乎、掘金、视频号或其他内容平台，只要拥有稳定影响力，都欢迎加入并获得更多合作与变现机会。</p></article>
           <article><span>03</span><h3>技术专家</h3><p>深耕 AI、大模型、Java、云计算、开发工具或国产软硬件等技术方向。</p></article>
           <article><span>04</span><h3>内容创作者</h3><p>擅长技术教程、产品测评、案例复盘、选题策划或深度写作。</p></article>
         </div>

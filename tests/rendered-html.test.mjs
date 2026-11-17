@@ -121,6 +121,23 @@ test("服务详情页提供明确行动入口且不重复当前服务", async ()
   assert.doesNotMatch(html, /href="\/services\/creator-campaign" class="service-card"/);
 });
 
+test("首页与详情页展示开发者活动招募和全平台粉丝增长服务", async () => {
+  const homeResponse = await render();
+  const homeHtml = await homeResponse.text();
+  assert.match(homeHtml, /开发者活动招募/);
+  assert.match(homeHtml, /全平台粉丝增长/);
+  assert.match(homeHtml, /全平台优质博主/);
+  assert.match(homeHtml, /商业变现资源/);
+
+  const eventResponse = await render("/services/developer-events");
+  assert.equal(eventResponse.status, 200);
+  assert.match(await eventResponse.text(), /各城市开发者社群触达/);
+
+  const growthResponse = await render("/services/platform-follower-growth");
+  assert.equal(growthResponse.status, 200);
+  assert.match(await growthResponse.text(), /开发者社群联动/);
+});
+
 test("首页优先展示代表性大规模案例", async () => {
   const response = await render();
   const html = await response.text();

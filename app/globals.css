@@ -104,6 +104,7 @@ nav a:not(.nav-cta):hover::after { right:0; }
 .service-grid-related .service-card,.service-grid-related .service-card:nth-child(-n+2) { grid-column:auto; min-height:290px; }
 .service-card { grid-column:span 2; min-height:300px; padding:30px; display:flex; flex-direction:column; border-right:1px solid var(--line); border-bottom:1px solid var(--line); background:rgba(255,255,255,.48); transition:background .2s ease-out,color .2s ease-out,transform .2s ease-out; }
 .service-card:nth-child(-n+2) { grid-column:span 3; min-height:320px; }
+.service-grid:not(.service-grid-related) .service-card:nth-last-child(-n+2) { grid-column:span 3; }
 .service-card:nth-child(2) { background:var(--accent-soft); }
 .service-card:hover { background:var(--navy); color:#fff; transform:translateY(-3px); }
 .service-card:hover h3,.service-card:hover p,.service-card:hover .service-number,.service-card:hover .text-link { color:#fff; }
